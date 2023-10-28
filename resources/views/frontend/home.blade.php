@@ -101,11 +101,10 @@
                             <img src="{{asset('assets/img/1.jpg')}}" alt="" class="popular__img" />
                             <div class="popular__date">
                   <span class="section__subtitle"
-                  >Marine insurance</span
-                  >
+                  >Marine insurance</span>
                                 <!-- <h3 class="popular-title">form</h3> -->
                                 <p class="popular__description">
-                                    <a href="./Insurancecompanies.html">Register Now</a>
+                                    <a href="{{route('frontend.insurance.company')}}">Register Now</a>
                                 </p>
                             </div>
                         </article>
@@ -115,7 +114,7 @@
                                 <span class="section__subtitle">Importer </span>
                                 <!-- <h3 class="popular-title">Minimize Manufacturing</h3> -->
                                 <p class="popular__description">
-                                    <a href="./import.html">Register Now</a>
+                                    <a href="{{route('frontend.import')}}">Register Now</a>
                                 </p>
                             </div>
                         </article>
@@ -125,7 +124,7 @@
                                 <span class="section__subtitle">Exporter </span>
                                 <!-- <h3 class="popular-title">Warehouse inventory</h3> -->
                                 <p class="popular__description">
-                                    <a href="./export.html">Register Now</a>
+                                    <a href="{{route('frontend.export')}}">Register Now</a>
                                 </p>
                             </div>
                         </article>
@@ -135,7 +134,7 @@
                                 <span class="section__subtitle">Shipping Company </span>
                                 <!-- <h3 class="popular-title">Warehouse inventory</h3> -->
                                 <p class="popular__description">
-                                    <a href="./shippingcompany.html">Register Now</a>
+                                    <a href="{{route('frontend.shipping.company')}}">Register Now</a>
                                 </p>
                             </div>
                         </article>
@@ -145,7 +144,7 @@
                                 <span class="section__subtitle">Extract </span>
                                 <!-- <h3 class="popular-title">Minimize Manufacturing</h3> -->
                                 <p class="popular__description">
-                                    <a href="./extract.html">Register Now</a>
+                                    <a href="{{route('frontend.extract')}}">Register Now</a>
                                 </p>
                             </div>
                         </article>

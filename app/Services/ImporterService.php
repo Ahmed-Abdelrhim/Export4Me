@@ -15,7 +15,7 @@ class ImporterService
         $company_name = $data['company_name'];
         $owner_name = $data['owner_name'];
         $manager_name = $data['manager_name'];
-        $factory_address = $data['factory_address'];
+        $address = $data['address'];
 
         $country = $data['country'];
 
@@ -71,8 +71,8 @@ class ImporterService
 
         $commercial_record = NULL;
         if (isset($data['commercial_record'])) {
-            $product_brochureArray = $this->storeImage($data['product_brochure'] , 'images/importers/commercial_records', false , '200' ,'200');
-            $commercial_record = $product_brochureArray['hashName'];
+            $commercial_recordArray = $this->storeImage($data['commercial_record'] , 'images/importers/commercial_records', false , '200' ,'200');
+            $commercial_record = $commercial_recordArray['hashName'];
         }
 
         $product_catalog = NULL;
@@ -87,7 +87,7 @@ class ImporterService
                 'company_name' => $company_name,
                 'owner_name' => $owner_name,
                 'manager_name' => $manager_name,
-                'factory_address' => $factory_address,
+                'address' => $address,
 
 
                 'country' => $country,
