@@ -1,7 +1,9 @@
 @extends('frontend.layouts.app')
 @section('content')
     <div class="row">
-        <form action="">
+        <form action="" method="POST" enctype="multipart/form-data">
+            @csrf
+
             <h3>نموذج شركات التامين البحري</h3>
             <label for=""> اسم المنشأء </label>
             <input type="text" placeholder="ادخل اسم المنشأء " class="box"/>
