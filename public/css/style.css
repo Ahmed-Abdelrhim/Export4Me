@@ -1,0 +1,72 @@
+
+/*
+input form
+==========================
+*/
+.custom-file-control, .form-control {
+    padding-right: 5px;
+}
+.table-title-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+fix sidebar links
+==========================
+*/
+.side.a-collapse {
+    margin-bottom: 20px;
+}
+.side.a-collapse li.side-item {
+    margin-bottom: 1rem;
+}
+/*
+profile setting
+==========================
+*/
+.profile {
+    position: relative;
+}
+.profile_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.profile_img {
+    position: absolute;
+    top: -65px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.login-btn {
+    margin-top: 1rem;
+}
+
+.action {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+}
+.action form {
+    margin-bottom: 0;
+}
+.action form input[type="submit"]:disabled {
+    opacity: 0.4;
+    user-select: none;
+    cursor: not-allowed;
+    pointer-events: all;
+}
+
+    .modal-header .btn-close {
+        margin: 0 !important;
+    }
