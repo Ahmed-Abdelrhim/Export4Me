@@ -1,9 +1,10 @@
 <header class="bmd-layout-header ">
     <div class="navbar navbar-light bg-faded animate__animated animate__fadeInDown">
-        <button class="navbar-toggler animate__animated animate__wobble animate__delay-2s" type="button" data-bs-toggle="collapse" data-bs-target="#dw-s1">
-        <span class="navbar-toggler-icon"></span>
-        <!-- <i class="material-Animation">menu</i> -->
-    </button>
+        <button class="navbar-toggler animate__animated animate__wobble animate__delay-2s" type="button"
+                data-bs-toggle="collapse" data-bs-target="#dw-s1">
+            <span class="navbar-toggler-icon"></span>
+            <!-- <i class="material-Animation">menu</i> -->
+        </button>
         <ul class="nav navbar-nav ">
             {{-- <li class="nav-item">
                 <div class="dropdown">
@@ -59,24 +60,69 @@
                     </div>
                 </div>
             </li> --}}
+
+            {{--            @else--}}
+            {{--                <a href="{{route('admin.dashboard')}}">--}}
+            {{--                    <img class="rounded-circle screen-user-profile"--}}
+            {{--                         src="{{ asset('images/' . auth('web')->user()->profile_img ) }}" alt="logo">--}}
+            {{--                </a>--}}
+
+
+            @php
+                $currentRoute = Route::currentRouteName();
+            @endphp
+
             <li class="nav-item">
                 @if(isset(auth('web')->user()->profile_img))
-                    <img class="rounded-circle screen-user-profile" src="{{ asset('images/' . auth('web')->user()->profile_img ) }}" alt="logo">
+
+                    @if(isset($currentRoute) and !empty($currentRoute))
+                        @if($currentRoute == 'admin.dashboard')
+                            <img class="rounded-circle screen-user-profile"
+                                 src="{{ asset('images/' . auth('web')->user()->profile_img ) }}" alt="logo">
+                        @endif
+
+
+                        @if($currentRoute != 'admin.dashboard')
+                            <a href="{{route('admin.dashboard')}}">
+                                <img class="rounded-circle screen-user-profile"
+                                     src="{{ asset('images/' . auth('web')->user()->profile_img ) }}" alt="logo">
+                            </a>
+                        @endif
+                    @endif
+
                 @else
-                    <img class="rounded-circle screen-user-profile" src="{{asset('assets/img/zexport4me-logo.png')}}" alt="logo">
+
+                    @if($currentRoute == 'admin.dashboard')
+                        <img class="rounded-circle screen-user-profile"
+                             src="{{asset('assets/img/zexport4me-logo.png')}}" alt="logo">
+                    @endif
+
+                    @if($currentRoute != 'admin.dashboard')
+                        <a href="{{route('admin.dashboard')}}">
+                            <img class="rounded-circle screen-user-profile"
+                                 src="{{asset('assets/img/zexport4me-logo.png')}}" alt="logo">
+                        </a>
+                    @endif
+
                 @endif
 
 
             </li>
             <li class="nav-item">
                 <div class="dropdown">
-                    <button class="btn  dropdown-toggle m-0" type="button" id="dropdownMenu4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn  dropdown-toggle m-0" type="button" id="dropdownMenu4" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                         {{auth()->user()->name}}
                     </button>
-                    <div aria-labelledby="dropdownMenu4" class="dropdown-menu dropdown-menu-right dropdown-menu dropdown-menu-right">
-                        <button onclick="dark()" class="dropdown-item" type="button"><i class="fas fa-moon fa-sm c-main mr-2"></i>الوضع المظلم</button>
-                        <a href="{{ route('admin.profile.index') }}" class="dropdown-item"><i class="far fa-user fa-sm c-main mr-2"></i>الإعدادات</a>
-                        <a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+                    <div aria-labelledby="dropdownMenu4"
+                         class="dropdown-menu dropdown-menu-right dropdown-menu dropdown-menu-right">
+                        <button onclick="dark()" class="dropdown-item" type="button"><i
+                                class="fas fa-moon fa-sm c-main mr-2"></i>الوضع المظلم
+                        </button>
+                        <a href="{{ route('admin.profile.index') }}" class="dropdown-item"><i
+                                class="far fa-user fa-sm c-main mr-2"></i>الإعدادات</a>
+                        <a class="dropdown-item" href="{{route('logout')}}"
+                           onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
                             <i class="fas fa-sign-out-alt c-main fa-sm mr-2"></i>
                             تسجيل الخروج
                             <form id="frm-logout" action="{{route('logout')}}" method="POST" style="display: none;">
