@@ -71,20 +71,15 @@
                 @enderror
 
             <label for=""> التليفون الأرضي </label>
-            <input
-                type="number"
-                placeholder="ادخل رقم التليفون الأرضي"
-                class="box" name="landline" required value="{{old('landline')}}" />
+{{--            <input type="number" placeholder="ادخل رقم التليفون الأرضي" class="box" name="landline" required value="{{old('landline')}}" />--}}
+            <input type="number" placeholder="02xxxxxxxx" class="box" name="landline" required value="{{old('landline')}}" />
                 @error('landline')
                 <span class="text-danger">{{$message}}</span>
                 @enderror
 
             <label for=""> الهاتف المحمول</label>
-            <input
-                type="number"
-                placeholder="ادخل رقم الهاتف المحمول"
-                class="box" name="phone_number" required value="{{old('phone_number')}}"
-            />
+{{--            <input type="number" placeholder="ادخل رقم الهاتف المحمول" class="box" name="phone_number" required value="{{old('phone_number')}}" />--}}
+            <input type="number" placeholder="01xxxxxxxxx" class="box" name="phone_number" required value="{{old('phone_number')}}" />
                 @error('phone_number')
                 <span class="text-danger">{{$message}}</span>
                 @enderror

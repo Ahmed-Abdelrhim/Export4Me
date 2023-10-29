@@ -66,14 +66,16 @@
 
 
             <label for=""> التليفون الأرضي </label>
-            <input name="landline" type="number" placeholder="ادخل رقم التليفون الأرضي" class="box" value="{{old('landline')}}"/>
+{{--            <input name="landline" type="number" placeholder="ادخل رقم التليفون الأرضي" class="box" value="{{old('landline')}}"/>--}}
+            <input name="landline" type="number" placeholder="02xxxxxxxx" class="box" value="{{old('landline')}}"/>
             @error('landline')
             <span class="text-danger">{{$message}}</span>
             @enderror
 
 
             <label for="phone_number"> الهاتف المحمول</label>
-            <input name="phone_number" type="number" placeholder="ادخل رقم الهاتف المحمول" class="box" id="phone_number" value="{{old('phone_number')}}"/>
+{{--            <input name="phone_number" type="number" placeholder="ادخل رقم الهاتف المحمول" class="box" id="phone_number" value="{{old('phone_number')}}"/>--}}
+            <input name="phone_number" type="number" placeholder="01xxxxxxxxx" class="box" id="phone_number" value="{{old('phone_number')}}"/>
             @error('phone_number')
             <span class="text-danger">{{$message}}</span>
             @enderror
