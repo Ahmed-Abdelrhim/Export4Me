@@ -222,8 +222,6 @@
             <span class="text-danger">{{$message}}</span>
             @enderror
 
-            <!--   0223769380     01152067271  -->
-
 
             <label for="product_brochure"> هل لديك بروشور للمنتج ؟ لو موجود ارفقه من فضلك </label>
             <input type="file" class="product_brochure" name="product_brochure" accept="image/png, image/jpeg, image/jpeg, image/webp" id="product_brochure" />
