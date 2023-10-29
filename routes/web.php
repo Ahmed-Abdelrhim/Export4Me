@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\AgentController as AdminAgentController;
 use App\Http\Controllers\Admin\ManagerController as AdminManagerController;
 use App\Http\Controllers\Agent\AgentSetController;
 use App\Http\Controllers\Agent\VistorsController;
+use App\Http\Controllers\Frontend\InsuranceController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Manager\AgentController;
 use App\Http\Controllers\Manager\ManagerSetController;
@@ -57,6 +58,8 @@ Route::get('/insuranceCompany', [FrontEndController::class,'insuranceCompany'])-
 Route::post('exporter/store',[ExporterController::class,'store'])->name('exporter.store');
 Route::post('importer/store',[ImporterController::class,'store'])->name('importer.store');
 Route::post('extractor/store',[ExtractorController::class,'store'])->name('extractor.store');
+
+Route::post('insurance/company/store',[InsuranceController::class,'store'])->name('insurance.company.store');
 
 // Form Submission.............
 
