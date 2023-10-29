@@ -9,7 +9,8 @@
            <div class="row ">
                <div class="col-md-5 card shade mw-center mh-center">
 {{--                   <img src="{{asset('svg/logo.svg')}}" alt="svg/logo.svg" class="mw-center " height="150" width="150" >--}}
-                   <img src="{{asset('elite_logo.Webp')}}" alt="elite logo" class="mw-center " height="150" width="150" >
+{{--                   <img src="{{asset('elite_logo.Webp')}}" alt="elite logo" class="mw-center " height="150" width="150" >--}}
+                   <img src="{{asset('assets/img/zexport4me-logo.png')}}" alt="elite logo" class="mw-center " height="150" width="150" >
 
 
                    <hr class="hr-dashed m-0">

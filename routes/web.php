@@ -6,9 +6,12 @@ use App\Http\Controllers\Admin\AgentController as AdminAgentController;
 use App\Http\Controllers\Admin\ManagerController as AdminManagerController;
 use App\Http\Controllers\Agent\AgentSetController;
 use App\Http\Controllers\Agent\VistorsController;
+use App\Http\Controllers\BackEnd\AdminImporterController;
 use App\Http\Controllers\Frontend\ExporterController;
 use App\Http\Controllers\Frontend\ExtractorController;
-use App\Http\Controllers\Frontend\ImporterController;
+
+use App\Http\Controllers\Frontend\ImporterController ;
+
 use App\Http\Controllers\Frontend\InsuranceController;
 use App\Http\Controllers\Frontend\ShippingController;
 use App\Http\Controllers\FrontEndController;
@@ -19,6 +22,8 @@ use App\Http\Controllers\Manager\VistorsController as ManagerVistorsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+
+use App\Http\Controllers\BackEnd\ImporterController as BackEndImporterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -83,6 +88,15 @@ All admin Users Routes List
 Route::middleware(['auth'])->group(function () {
     Route::group(['prefix' => 'admin'], function () {
         Route::get('dashboard', [HomeController::class, 'adminHome'])->name('admin.dashboard');
+
+
+        //Importers....
+        Route::get('Importer/Index',[AdminImporterController::class,'index'])->name('admin.importer.index');
+        Route::get('Importer/Create',[AdminImporterController::class,'create'])->name('admin.importer.create');
+        Route::post('Importer/Store',[AdminImporterController::class,'store'])->name('admin.importer.store');
+
+
+
 
         /* manager control moduls*/
         Route::get('Manager/index', [AdminManagerController::class, 'index'])->name('admin.manager.index');

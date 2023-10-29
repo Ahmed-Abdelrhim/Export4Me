@@ -32,35 +32,47 @@
                 <div class="col-md-6 mb-3">
                     <a href="{{ route('admin.manager.index') }}">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
-                            <span class="c-first">عدد المشرفين</span>
-                            <span class="h3">{{ $managerCount }}</span>
+                            <span class="c-first">عدد المصدرين</span>
+                            <span class="h3">{{ $exportersCount }}</span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <a href="{{ route('admin.agent.index') }}">
+                    <a href="{{ route('admin.importer.index') }}">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
-                            <span class="c-first">عدد مطورين المبيعات</span>
-                            <span class="h3">{{ $agentCount }}</span>
+                            <span class="c-first">عدد المستوردين</span>
+                            <span class="h3">{{ $importersCount }}</span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 mb-3">
                     <a href="{{ route('admin.vistor.index', 'Allvistorsmanager') }}">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
-                            <span class="c-first">عدد زيارات المشرفين</span>
-                            <span class="h3">{{ $vistorMCount }}</span>
+                            <span class="c-first">عددالمستخرجين</span>
+                            <span class="h3">{{ $extractorsCount }}</span>
                         </div>
                     </a>
                 </div>
+
                 <div class="col-md-6 mb-3">
                     <a href="{{ route('admin.vistor.index', 'Allvistors') }}">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
-                            <span class="c-first">عدد زيارات المطورين</span>
-                            <span class="h3">{{ $vistorCount }}</span>
+                            <span class="c-first">عدد شركات الشحن</span>
+                            <span class="h3">{{ $shippingsCount }}</span>
                         </div>
                     </a>
                 </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="{{ route('admin.vistor.index', 'Allvistors') }}">
+                        <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
+                            <span class="c-first">عدد شركات التأمين</span>
+                            <span class="h3">{{ $insuranceCount }}</span>
+                        </div>
+                    </a>
+                </div>
+
+
             </div>
         </div>
     </main>

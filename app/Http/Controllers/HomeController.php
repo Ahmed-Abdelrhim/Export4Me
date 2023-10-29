@@ -3,8 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Agent;
+use App\Models\Exporter;
+use App\Models\Extractor;
+use App\Models\Importer;
+use App\Models\Insurance;
 use App\Models\Manager;
 use App\Models\myVistorsManager;
+use App\Models\Shipping;
 use App\Models\Vistor;
 use Illuminate\Http\Request;
 
@@ -13,11 +18,16 @@ class HomeController extends Controller
 
     public function adminHome()
     {
-        $managerCount = Manager::count();
-        $agentCount = Agent::count();
-        $vistorCount = Vistor::count();
-        $vistorMCount = myVistorsManager::count();
-        return view('admin.dashboard', compact('managerCount', 'agentCount', 'vistorCount', 'vistorMCount'));
+        // $managerCount = Manager::count();
+        // $agentCount = Agent::count();
+        // $vistorCount = Vistor::count();
+        // $vistorMCount = myVistorsManager::count();
+        $exportersCount = Exporter::count();
+        $importersCount = Importer::count();
+        $extractorsCount = Extractor::count();
+        $shippingsCount = Shipping::count();
+        $insuranceCount = Insurance::count();
+        return view('admin.dashboard', compact('exportersCount', 'importersCount', 'extractorsCount', 'shippingsCount' , 'insuranceCount'));
     }
 
     public function managerHome()

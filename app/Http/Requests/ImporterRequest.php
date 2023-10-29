@@ -31,7 +31,7 @@ class ImporterRequest extends FormRequest
             'harbor_name' => ['required', 'string' , 'min:5', 'max:255'],
 
             'origin' => ['nullable', 'string' , 'min:5', 'max:255'],
-            'product_description' =>  ['nullable', 'string' ],
+            'product_description' =>  ['required', 'string', 'min:5', 'max:1000'],
 
 
             'size' => ['required', 'string'],
