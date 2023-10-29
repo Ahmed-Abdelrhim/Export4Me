@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\BackEnd;
 
 use App\Http\Controllers\Controller;
-use App\Models\Importer;
+use App\Models\Exporter;
 
-class AdminImporterController extends Controller
+class AdminExporterController extends Controller
 {
     public function index()
     {
-        $importers = Importer::paginate(5);
-        return view('backend.importers.index',['importers' => $importers]);
+        $exporters = Exporter::paginate(5);
+        return view('backend.exporters.index',['exporters' => $exporters]);
     }
 
     public function create()

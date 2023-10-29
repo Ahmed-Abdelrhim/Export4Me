@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\ManagerController as AdminManagerController;
 use App\Http\Controllers\Agent\AgentSetController;
 use App\Http\Controllers\Agent\VistorsController;
 use App\Http\Controllers\BackEnd\AdminImporterController;
+use App\Http\Controllers\BackEnd\AdminExporterController;
 use App\Http\Controllers\Frontend\ExporterController;
 use App\Http\Controllers\Frontend\ExtractorController;
 
@@ -23,7 +24,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
-use App\Http\Controllers\BackEnd\ImporterController as BackEndImporterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -90,10 +90,16 @@ Route::middleware(['auth'])->group(function () {
         Route::get('dashboard', [HomeController::class, 'adminHome'])->name('admin.dashboard');
 
 
-        //Importers....
+        //AdminImporterController....
         Route::get('Importer/Index',[AdminImporterController::class,'index'])->name('admin.importer.index');
         Route::get('Importer/Create',[AdminImporterController::class,'create'])->name('admin.importer.create');
         Route::post('Importer/Store',[AdminImporterController::class,'store'])->name('admin.importer.store');
+
+
+        // AdminExporterController....
+        Route::get('Exporter/Index',[AdminExporterController::class,'index'])->name('admin.exporter.index');
+        Route::get('Exporter/Create',[AdminExporterController::class,'create'])->name('admin.exporter.create');
+        Route::post('Exporter/Store',[AdminExporterController::class,'store'])->name('admin.exporter.store');
 
 
 

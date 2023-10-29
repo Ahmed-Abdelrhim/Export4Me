@@ -1,5 +1,4 @@
 @extends('layouts.master')
-
 @section('content')
     <div class="bmd-layout-container bmd-drawer-f-l avam-container animated bmd-drawer-in">
         @include('admin.layout.navbar')
@@ -113,11 +112,7 @@
                                     <td>{{ $importer->created_at }}</td>
 
                                     <td>
-                                        @if ($importer->status == 1)
-                                            <a class="btn flat f-danger fnt-xxs" href="#">تعطيل</a>
-                                        @else
-                                            <a class="btn flat f-second fnt-xxs" href="#">تفعيل</a>
-                                        @endif
+                                        <a class="btn flat f-second fnt-xxs" href="#">تعديل</a>
                                         <a class="btn outlined c-danger o-danger fnt-xxs" href="#">حذف</a>
                                     </td>
                                 </tr>

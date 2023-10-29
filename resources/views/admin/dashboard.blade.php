@@ -30,7 +30,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <a href="{{ route('admin.manager.index') }}">
+                    <a href="{{ route('admin.exporter.index') }}">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
                             <span class="c-first">عدد المصدرين</span>
                             <span class="h3">{{ $exportersCount }}</span>
