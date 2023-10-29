@@ -14,7 +14,7 @@
 
         <ul class="side a-collapse short">
 
-            <a class="ul-text"><i class="fas fa-users mr-1"></i> الفريق
+            <a class="ul-text"><i class="fas fa-users mr-1"></i> البيانات
                 <!-- <span class="badge badge-info">4</span> -->
                 <i class="fas fa-chevron-down arrow"></i></a>
             <div class="side-item-container ">
