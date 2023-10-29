@@ -86,8 +86,11 @@
             <span class="text-danger">{{$message}}</span>
             @enderror
 
-            <label for=""> سنه الانشاء تاريخ السجل التجاري صوره منه حديثه </label>
-            <input type="file" class="" name="" accept="image/png, image/jpeg"/>
+            <label for="commercial_record"> سنه الانشاء تاريخ السجل التجاري صوره منه حديثه </label>
+            <input name="commercial_record" type="file" class="" accept="image/png, image/jpeg, image/jpg, image/webp" id="commercial_record"/>
+            @error('commercial_record')
+            <span class="text-danger">{{$message}}</span>
+            @enderror
 
             <button class="button" type="submit">ارسال النموذج</button>
         </form>

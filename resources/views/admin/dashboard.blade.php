@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <a href="#">
+                    <a href="{{route('admin.shipping.index')}}">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
                             <span class="c-first">عدد شركات الشحن</span>
                             <span class="h3">{{ $shippingsCount }}</span>
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <a href="#">
+                    <a href="{{route('admin.insurance.index')}}">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
                             <span class="c-first">عدد شركات التأمين</span>
                             <span class="h3">{{ $insuranceCount }}</span>

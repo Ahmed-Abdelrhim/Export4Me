@@ -78,8 +78,35 @@
 
 
                                     <td>{{ $extractor->shipping_types }}</td>
-                                    <td>{{ $extractor->harbor_type }}</td>
-                                    <td>{{ $extractor->clearance_type }}</td>
+                                    @if(!empty($extractor->harbor_type))
+                                        @if($extractor->harbor_type == 1)
+                                            <td> صادر</td>
+                                        @endif
+
+                                        @if($extractor->harbor_type == 2)
+                                            <td> وارد </td>
+                                        @endif
+                                    @else
+                                        --
+                                    @endif
+
+
+
+                                    @if(!empty($extractor->clearance_type))
+                                        @if($extractor->clearance_type == 1)
+                                            <td> بحري</td>
+                                        @endif
+
+                                        @if($extractor->clearance_type == 2)
+                                            <td> جوي</td>
+                                        @endif
+
+                                        @if($extractor->clearance_type == 3)
+                                            <td> بري</td>
+                                        @endif
+                                    @else
+                                        --
+                                    @endif
 
 
                                     <td>{{ $extractor->commercial_record }}</td>

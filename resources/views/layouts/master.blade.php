@@ -9,6 +9,14 @@
 
     <title>{{ config('app.name', 'Export4Me') }}</title>
 
+    <!--=============== FAVICON ===============-->
+    <link
+        rel="shortcut icon" href="{{asset('assets/img/zexport4me-logo.png')}}"
+        type="image/x-icon"
+    />
+
+
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">

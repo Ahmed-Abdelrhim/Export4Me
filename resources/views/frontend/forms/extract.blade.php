@@ -19,26 +19,26 @@
 
             <h3>نموذج المستخلص</h3>
             <label for=""> اسم المنشأء </label>
-            <input name="company_name" type="text" placeholder="ادخل اسم المنشأء " class="box" value="{{old('company_name')}}" />
+            <input name="company_name" type="text" placeholder="ادخل اسم المنشأء " class="box" required value="{{old('company_name')}}" />
             @error('company_name')
             <span class="text-danger">{{$message}}</span>
             @enderror
 
 
             <label for=""> اسم صاحب المنشأء </label>
-            <input name="owner_name" type="text" placeholder="ادخل اسم المنشأء " class="box" value="{{old('owner_name')}}" />
+            <input name="owner_name" type="text" placeholder="ادخل اسم المنشأء " class="box" required value="{{old('owner_name')}}" />
             @error('owner_name')
             <span class="text-danger">{{$message}}</span>
             @enderror
 
             <label for=""> اسم المدير المسئول </label>
-            <input name="manager_name" type="text" placeholder="ادخل اسم المدير المسئول " class="box" value="{{old('manager_name')}}"/>
+            <input name="manager_name" type="text" placeholder="ادخل اسم المدير المسئول " class="box" required value="{{old('manager_name')}}"/>
             @error('name="manager_name"')
             <span class="text-danger">{{$message}}</span>
             @enderror
 
             <label for=""> العنوان بالتفصيل </label>
-            <input name="address" type="text" placeholder="ادخل العنوان بالتفصيل   " class="box" value="{{old('address')}}"/>
+            <input name="address" type="text" placeholder="ادخل العنوان بالتفصيل   " class="box" required value="{{old('address')}}"/>
             @error('address')
             <span class="text-danger">{{$message}}</span>
             @enderror
@@ -59,35 +59,35 @@
 
 
             <label for="email"> الأيميل الرسمي للمسئول </label>
-            <input name="email" type="email" placeholder="ادخل الأيميل" class="box" id="email" value="{{old('email')}}"/>
+            <input name="email" type="email" placeholder="ادخل الأيميل" class="box" id="email" required value="{{old('email')}}"/>
             @error('email')
             <span class="text-danger">{{$message}}</span>
             @enderror
 
 
             <label for=""> التليفون الأرضي </label>
-            <input name="landline" type="number" placeholder="ادخل رقم التليفون الأرضي" class="box" value="{{old('landline')}}"/>
+            <input name="landline" type="number" placeholder="ادخل رقم التليفون الأرضي" class="box" required value="{{old('landline')}}"/>
             @error('landline')
             <span class="text-danger">{{$message}}</span>
             @enderror
 
 
             <label for="phone_number"> الهاتف المحمول</label>
-            <input name="phone_number" type="number" placeholder="ادخل رقم الهاتف المحمول" class="box" id="phone_number" value="{{old('phone_number')}}"/>
+            <input name="phone_number" type="number" placeholder="ادخل رقم الهاتف المحمول" class="box" id="phone_number" required value="{{old('phone_number')}}"/>
             @error('phone_number')
             <span class="text-danger">{{$message}}</span>
             @enderror
 
 
             <label for="shipping_types"> أنواع الشحن </label>
-            <input name="shipping_types" type="text" placeholder="ادخل أنواع الشحن" class="box" id="shipping_types" value="{{old('shipping_types')}}"/>
+            <input name="shipping_types" type="text" placeholder="ادخل أنواع الشحن" class="box" id="shipping_types" required value="{{old('shipping_types')}}"/>
             @error('shipping_types')
             <span class="text-danger">{{$message}}</span>
             @enderror
 
 
             <label for="harbor_type"> المواني الذي تعمل بها </label>
-            <select name="harbor_type" id="harbor_type">
+            <select name="harbor_type" id="harbor_type" required>
                 <option value="1">صادر</option>
                 <option value="2">وارد</option>
             </select>
@@ -97,7 +97,7 @@
 
 
             <label for="clearance_type"> التخليص بحري؟ جوي؟ بري؟</label>
-            <select name="clearance_type" id="clearance_type">
+            <select name="clearance_type" id="clearance_type" required>
                 <option value="1">بحري</option>
                 <option value="2">جوي</option>
                 <option value="3">بري</option>
