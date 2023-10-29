@@ -23,6 +23,10 @@ use App\Http\Controllers\Manager\VistorsController as ManagerVistorsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\BackEnd\AdminExtractorController;
+use App\Http\Controllers\BackEnd\AdminShippingController;
+use App\Http\Controllers\BackEnd\AdminInsuranceController;
+
 
 
 /*
@@ -100,6 +104,22 @@ Route::middleware(['auth'])->group(function () {
         Route::get('Exporter/Index',[AdminExporterController::class,'index'])->name('admin.exporter.index');
         Route::get('Exporter/Create',[AdminExporterController::class,'create'])->name('admin.exporter.create');
         Route::post('Exporter/Store',[AdminExporterController::class,'store'])->name('admin.exporter.store');
+
+        // AdminExtractorController....
+        Route::get('Extractor/Index',[AdminExtractorController::class,'index'])->name('admin.extractor.index');
+        Route::get('Extractor/Create',[AdminExtractorController::class,'create'])->name('admin.extractor.create');
+        Route::post('Extractor/Store',[AdminExtractorController::class,'store'])->name('admin.extractor.store');
+
+        // AdminShippingController....
+        Route::get('Shipping/Index',[AdminShippingController::class,'index'])->name('admin.shipping.index');
+        Route::get('Shipping/Create',[AdminShippingController::class,'create'])->name('admin.shipping.create');
+        Route::post('Shipping/Store',[AdminShippingController::class,'store'])->name('admin.shipping.store');
+
+        // AdminInsuranceController....
+        Route::get('Insurance/Index',[AdminInsuranceController::class,'index'])->name('admin.insurance.index');
+        Route::get('Insurance/Create',[AdminInsuranceController::class,'create'])->name('admin.insurance.create');
+        Route::post('Insurance/Store',[AdminInsuranceController::class,'store'])->name('admin.insurance.store');
+
 
 
 
