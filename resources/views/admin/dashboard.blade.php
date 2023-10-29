@@ -46,7 +46,7 @@
                     </a>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <a href="{{ route('admin.vistor.index', 'Allvistorsmanager') }}">
+                    <a href="{{ route('admin.extractor.index') }}">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
                             <span class="c-first">عددالمستخرجين</span>
                             <span class="h3">{{ $extractorsCount }}</span>
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <a href="{{ route('admin.vistor.index', 'Allvistors') }}">
+                    <a href="#">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
                             <span class="c-first">عدد شركات الشحن</span>
                             <span class="h3">{{ $shippingsCount }}</span>
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <a href="{{ route('admin.vistor.index', 'Allvistors') }}">
+                    <a href="#">
                         <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
                             <span class="c-first">عدد شركات التأمين</span>
                             <span class="h3">{{ $insuranceCount }}</span>

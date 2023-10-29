@@ -41,74 +41,51 @@
                                 <td>اسم المنشأ</td>
                                 <td>اسم صاحب المنشأ</td>
                                 <td>اسم المدير المسئول</td>
+                                <td>العنوان</td>
 
                                 <td>الموقع</td>
-
                                 <td>الميديا</td>
-
                                 <td>بريد المستورد</td>
-
-                                <td>الدوله</td>
-
                                 <td>التليفون الأرضي</td>
-
                                 <td>الهاتف المحمول</td>
 
-                                <td>اسم المنتج المراد استيراده</td>
+                                <td>أنواع الشحن</td>
+                                <td>المواني الذي تعمل بها</td>
+                                <td>التخليص بحري؟ جوي؟ بري؟</td>
 
-                                <td>مينا الوصول</td>
-
-                                <td>المنشا المطلوب</td>
-
-                                <td>شرح تفصيلي للمنتج</td>
-
-
-                                <td> حجم الطلب الشهري او السنوي</td>
-
-                                <td>قيمه ماسبق استيراده</td>
-
-                                <td>القطاع الذي تنتمي اليه</td>
-
-                                <td>موافقات الاستيراد</td>
 
                                 <td>السجل التجاري</td>
-
-                                <td>كتالوج للمنتج</td>
+                                <td> الرخصه</td>
 
                                 <td> تاريخ الإنشاء</td>
-
                                 <td>اتخاذ إجراء</td>
                             </tr>
-                            @forelse ($importers as $importer)
+                            {{--                            17 --}}
+                            @forelse ($extractors as $extractor)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $importer->company_name }}</td>
-                                    <td>{{ $importer->owner_name }}</td>
-                                    <td>{{ $importer->manager_name }}</td>
-                                    <td>{{ $importer->address }}</td>
-                                    <td>{{ $importer->country }}</td>
-                                    <td>{{ $importer->website }}</td>
-                                    <td>{{ $importer->media }}</td>
-                                    <td>{{ $importer->email }}</td>
-                                    <td>{{ $importer->landline }}</td>
-                                    <td>{{ $importer->mobile_phone }}</td>
+                                    <td>{{ $extractor->company_name }}</td>
+                                    <td>{{ $extractor->owner_name }}</td>
+                                    <td>{{ $extractor->manager_name }}</td>
+                                    <td>{{ $extractor->address }}</td>
 
 
-                                    <td>{{ $importer->product_name }}</td>
-                                    <td>{{ $importer->harbor_name }}</td>
+                                    <td>{{ $extractor->website }}</td>
+                                    <td>{{ $extractor->media }}</td>
+                                    <td>{{ $extractor->email }}</td>
+                                    <td>{{ $extractor->landline }}</td>
+                                    <td>{{ $extractor->mobile_phone }}</td>
 
 
-                                    <td>{{ $importer->origin }}</td>
-                                    <td>{{ $importer->product_description }}</td>
-                                    <td>{{ $importer->size }}</td>
-                                    <td>{{ $importer->imported_before_value }}</td>
+                                    <td>{{ $extractor->shipping_types }}</td>
+                                    <td>{{ $extractor->harbor_type }}</td>
+                                    <td>{{ $extractor->clearance_type }}</td>
 
-                                    <td>{{ $importer->sector }}</td>
-                                    <td>{{ $importer->is_agreed_to_import == 1 ? 'نعم' : 'لا' }}</td>
-                                    <td>{{ $importer->commercial_record }}</td>
-                                    <td>{{ $importer->product_catalog }}</td>
-                                    <td>{{ $importer->created_at }}</td>
 
+                                    <td>{{ $extractor->commercial_record }}</td>
+                                    <td>{{ $extractor->license }}</td>
+
+                                    <td>{{ $extractor->created_at }}</td>
                                     <td>
                                         <a class="btn flat f-second fnt-xxs" href="#">تعديل</a>
                                         <a class="btn outlined c-danger o-danger fnt-xxs" href="#">حذف</a>
@@ -116,7 +93,7 @@
                                 </tr>
                             @empty
                                 <tr>
-                                    <td>لا يوجد مستوردين بعد</td>
+                                    <td>لا يوجد مستخرجين بعد</td>
                                 </tr>
                             @endforelse
                         </table>
