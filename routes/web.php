@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\Frontend\ExporterController;
 use App\Http\Controllers\Frontend\ImporterController;
+use App\Http\Controllers\Frontend\ExtractorController;
 
 
 /*
@@ -55,6 +56,7 @@ Route::get('/insuranceCompany', [FrontEndController::class,'insuranceCompany'])-
 #exporter From
 Route::post('exporter/store',[ExporterController::class,'store'])->name('exporter.store');
 Route::post('importer/store',[ImporterController::class,'store'])->name('importer.store');
+Route::post('extractor/store',[ExtractorController::class,'store'])->name('extractor.store');
 
 // Form Submission.............
 
