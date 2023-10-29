@@ -4,8 +4,17 @@
         <form action="{{route('insurance.company.store')}}" method="POST" enctype="multipart/form-data">
             @csrf
 
-            <h3>نموذج شركات التامين البحري</h3>
+            @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
 
+            <h3>نموذج شركات التامين البحري</h3>
 
             <label for="company_name"> اسم المنشأء </label>
             <input name="company_name" type="text" placeholder="ادخل اسم المنشأء " class="box" value="{{old('company_name')}}" id="company_name"/>
