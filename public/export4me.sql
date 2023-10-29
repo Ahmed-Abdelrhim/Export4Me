@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 29, 2023 at 01:44 PM
+-- Generation Time: Oct 29, 2023 at 03:42 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.1.17
 
@@ -101,8 +101,8 @@ CREATE TABLE `exporters` (
 --
 
 INSERT INTO `exporters` (`id`, `company_name`, `owner_name`, `manager_name`, `factory_address`, `country`, `website`, `media`, `email`, `landline`, `mobile_phone`, `product_name`, `product_description`, `production_quantity`, `local_selling`, `country_export_to_before`, `country_export_to_before_value`, `exporter_place`, `shipping_worked_before`, `sector`, `exporter_record`, `export_paper`, `photo_team`, `commercial_record`, `product_brochure`, `created_at`, `updated_at`) VALUES
-(1, 'Barron and Sharpe Inc', 'Jocelyn Warren', 'Charity Rice', 'Ex cum dolorum ea ad', 'Culpa rerum magni cu', 'https://www.geruduqonag.me.uk', 'Sed dolorum esse quo', 'xida@mailinator.com', '0223769380', '01152067271', 'Astra Wilcox', 'Tempora libero atque', '651', 'Voluptatem temporibu', 'Tempora unde ducimus', 'Ipsam adipisci cumqu', 'Facere vitae quis au', 'Proident veniam vo', '3', 1, 1, 1, '9774fec66d7a3b33a0b808c67daff6ab.png', '9774fec66d7a3b33a0b808c67daff6ab.png', '2023-10-28 21:15:25', '2023-10-28 21:15:25'),
-(2, 'Ahmed Abdelrhim', 'Ahmed Abdelrhim', 'Ahmed Abdelrhim', 'Helwan Cairo', 'Egypt', 'https://www.xycitepirydesi.com', NULL, 'aabdelrhim974@gmail.com', '0223769380', '01152067271', 'Pepsi Can', 'Pepsi Can Details Is Here', '1000', 'Yes', 'USA', '800', 'United Kingdom', 'Quia illum consequu', '3', 1, 2, 1, 'bccc321a71bc35c86f525b12410d67f3.png', 'bccc321a71bc35c86f525b12410d67f3.png', '2023-10-28 21:20:09', '2023-10-28 21:20:09');
+(1, 'Netflix', 'Walter White', 'Walter White', 'Los Gatos, California, in Santa Clara County, with the two CEOs, Greg Peters and Ted Sarandos, split between Los Gatos and Los Angeles, respectively.', 'United States Of America', 'https://www.netflix.com/eg-en/', 'https://www.netflix.com/eg-en/', 'aabdelrhim974@gmail.com', '0223769380', '01152067271', 'Movies Production Inc', 'Description Should Be Here', '651', 'Yes', 'all around the world', '800', 'United Kingdom', 'DHL is an American-founded German logistics company providing courier, package delivery and express mail service, delivering over 1.8 billion parcels per year', '3', 1, 1, 1, '9774fec66d7a3b33a0b808c67daff6ab.png', '9774fec66d7a3b33a0b808c67daff6ab.png', '2023-10-28 21:15:25', '2023-10-28 21:15:25'),
+(2, 'Disney', 'Ahmed Abdelrhim', 'Ahmed Abdelrhim', 'Helwan Cairo', 'Egypt', 'https://www.apps.disneyplus.com/eg/onboarding', 'https://www.apps.disneyplus.com/eg/onboarding', 'aabdelrhim974@gmail.com', '0223769380', '01152067271', 'Pepsi Can', 'Pepsi Can Details Is Here', '1000', 'Yes', 'USA', '800', 'United Kingdom', 'DHL is an American-founded German logistics company providing courier, package delivery and express mail service, delivering over 1.8 billion parcels per year', '3', 1, 2, 1, 'bccc321a71bc35c86f525b12410d67f3.png', 'bccc321a71bc35c86f525b12410d67f3.png', '2023-10-28 21:20:09', '2023-10-28 21:20:09');
 
 -- --------------------------------------------------------
 
@@ -135,7 +135,7 @@ CREATE TABLE `extractors` (
 --
 
 INSERT INTO `extractors` (`id`, `company_name`, `owner_name`, `manager_name`, `address`, `website`, `media`, `email`, `landline`, `mobile_phone`, `shipping_types`, `harbor_type`, `clearance_type`, `commercial_record`, `license`, `created_at`, `updated_at`) VALUES
-(1, 'Ahmed Abdelrhim', 'Ahmed Abdelrhim', 'Ahmed Abdelrhim', 'Cairo , Helwan', 'https://www.nurubowekaruxoj.in', 'Veritatis exercitati', 'aabdelrhim974@gmail.com', '0223769380', NULL, 'Shipping Types Is Here', '1', '1', '80918fa3d5751555460648b43ac11bb0.png', NULL, '2023-10-29 10:40:11', '2023-10-29 10:40:11');
+(1, 'Ahmed Abdelrhim', 'Ahmed Abdelrhim', 'Ahmed Abdelrhim', 'Cairo , Helwan', 'https://www.nurubowekaruxoj.in', 'Veritatis exercitati', 'aabdelrhim974@gmail.com', '0223769380', '01152067271', 'Shipping Types Is Here', '1', '1', '80918fa3d5751555460648b43ac11bb0.png', NULL, '2023-10-29 10:40:11', '2023-10-29 10:40:11');
 
 -- --------------------------------------------------------
 
@@ -190,7 +190,7 @@ CREATE TABLE `importers` (
 --
 
 INSERT INTO `importers` (`id`, `company_name`, `owner_name`, `manager_name`, `address`, `country`, `website`, `media`, `email`, `landline`, `mobile_phone`, `product_name`, `harbor_name`, `origin`, `product_description`, `size`, `imported_before_value`, `sector`, `is_agreed_to_import`, `commercial_record`, `product_catalog`, `created_at`, `updated_at`) VALUES
-(1, 'Buchanan Kennedy Traders', 'Alexis Kirkland', 'Amir Houston', 'Explicabo Fugiat om', 'Consequatur dolorem', 'https://www.lab.biz', 'Aliquip sunt expedit', 'fubunava@mailinator.com', '0223769380', '01152067271', NULL, 'Lareina Berry', 'Quis blanditiis nisi', 'Corporis suscipit et', 'Totam hic exercitati', 'Rerum consequuntur s', '2', 2, '821279c672574b6219ff1abe02feef8d.png', '4a916cb1f2d8a8f484e5309e609dbf59.png', '2023-10-28 22:17:19', '2023-10-28 22:17:19'),
+(1, 'Ahmed Abdelrhim', 'Ahmed Abdelrhim', 'Ahmed Abdelrhim', 'Cairo , Helwan', 'Egypt', 'https://www.youtube.com', 'https://www.youtube.com', 'aabdelrhim974@gmail.com', '0223769380', '01152067271', 'Pepsi Can', 'Harbor Name Is Here', 'Origin Is Here', 'Product Desc Is Here', 'Size Is Here', 'Imported Before Is Here', '2', 2, '821279c672574b6219ff1abe02feef8d.png', '4a916cb1f2d8a8f484e5309e609dbf59.png', '2023-10-28 22:17:19', '2023-10-28 22:17:19'),
 (2, 'Buchanan Kennedy Traders', 'Alexis Kirkland', 'Amir Houston', 'Explicabo Fugiat om', 'Consequatur dolorem', 'https://www.lab.biz', 'Aliquip sunt expedit', 'fubunava@mailinator.com', '0223769380', '01152067271', NULL, 'Lareina Berry', 'Quis blanditiis nisi', 'Corporis suscipit et', 'Totam hic exercitati', 'Rerum consequuntur s', '2', 2, '59bd1a871a12d13dbb13646163e8e21f.png', 'a0614dbc9c718eaf63ea5f866412b447.png', '2023-10-28 22:17:39', '2023-10-28 22:17:39');
 
 -- --------------------------------------------------------
