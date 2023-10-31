@@ -7,7 +7,7 @@ class AdminInsuranceController extends Controller
 {
     public function index()
     {
-        $insurance = Insurance::paginate(1);
+        $insurance = Insurance::orderBy('id' , 'desc')->paginate(1);
         return view('backend.insurance.index', compact('insurance'));
     }
 

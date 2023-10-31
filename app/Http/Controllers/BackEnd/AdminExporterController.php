@@ -9,7 +9,7 @@ class AdminExporterController extends Controller
 {
     public function index()
     {
-        $exporters = Exporter::paginate(1);
+        $exporters = Exporter::orderBy('id' , 'desc')->paginate(1);
         return view('backend.exporters.index',['exporters' => $exporters]);
     }
 

@@ -9,7 +9,7 @@ class AdminImporterController extends Controller
 {
     public function index()
     {
-        $importers = Importer::paginate(1);
+        $importers = Importer::orderBy('id' , 'desc')->paginate(1);
         return view('backend.importers.index',['importers' => $importers]);
     }
 

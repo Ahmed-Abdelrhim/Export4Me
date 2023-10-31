@@ -7,7 +7,7 @@ class AdminExtractorController extends Controller
 {
     public function index()
     {
-        $extractors = Extractor::paginate(1);
+        $extractors = Extractor::orderBy('id' , 'desc')->paginate(1);
         return view('backend.extractors.index', compact('extractors'));
     }
 
