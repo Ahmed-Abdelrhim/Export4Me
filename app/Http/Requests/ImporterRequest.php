@@ -22,7 +22,11 @@ class ImporterRequest extends FormRequest
             'website' => ['nullable','regex:/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i'],
             'media' => ['nullable', 'string', 'min:2', 'max:255'],
             'email' => ['required', 'email'],
-            'landline' => ['required', 'size:10' , 'regex:/^02[0-9]{8}$/'],
+
+
+//            'landline' => ['required', 'size:10' , 'regex:/^02[0-9]{8}$/'],
+            'landline' => ['required', 'size:10'],
+
             'phone_number' => ['required','size:11','regex:/^01[0-2|5]{1}[0-9]{8}$/'],
 
 
