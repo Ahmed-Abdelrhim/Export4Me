@@ -25,7 +25,7 @@ class ShippingCompanyRequest extends FormRequest
 
 
 //            'landline' => ['required', 'size:10', 'regex:/^02[0-9]{8}$/'],,
-            'landline' => ['required', 'size:10'],
+            'landline' => ['required', 'min:7', 'max:12'],
             'phone_number' => ['required', 'size:11', 'regex:/^01[0-2|5]{1}[0-9]{8}$/'],
 
             'shipping_types' => ['required', 'string', 'min:5', 'max:255'],

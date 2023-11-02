@@ -1,8 +1,8 @@
 <!--==================== HEADER ====================-->
 <header class="header" id="header">
     <nav class="nav container">
-        <a href="" class="nav__logo">
-            <img src="{{asset('assets/img/zexport4me-logo.png')}}" alt="logo" />
+        <a href="{{route('frontend.home')}}" class="nav__logo">
+            <img  src="{{asset('assets/img/zexport4me-logo.png')}}" alt="logo" />
         </a>
 
         <div class="nav__menu">

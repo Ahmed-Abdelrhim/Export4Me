@@ -25,7 +25,8 @@ class InsuranceCompanyRequest extends FormRequest
 
 
 //            'landline' => ['required', 'size:10' , 'regex:/^02[0-9]{8}$/'],
-            'landline' => ['required', 'size:10'],
+            // 'landline' => ['required', 'size:10'],
+            'landline' => ['required', 'min:7', 'max:12'],
             'phone_number' => ['required','size:11','regex:/^01[0-2|5]{1}[0-9]{8}$/'],
 
             'commercial_record' => ['nullable', 'image', 'max:4100', 'mimes:jpg,png,jpeg,webp'],
