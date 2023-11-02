@@ -20,4 +20,14 @@ class AdminShippingController extends Controller
     public function store()
     {
     }
+
+    public function destroy($id)
+    {
+        $shipping = Shipping::find($id);
+        if ($shipping) {
+            $shipping->delete();
+            return redirect()->route('admin.shipping.index')->withSuccess('Shipping deleted successfully');
+        }
+        return redirect()->route('admin.shipping.index')->withSuccess('Shipping was not found');
+    }
 }

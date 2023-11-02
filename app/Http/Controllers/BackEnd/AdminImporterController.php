@@ -20,4 +20,14 @@ class AdminImporterController extends Controller
     public function store()
     {
     }
+
+    public function destroy($id)
+    {
+        $importer = Importer::find($id);
+        if ($importer) {
+            $importer->delete();
+            return redirect()->route('admin.importer.index')->withSuccess('importer deleted successfully');
+        }
+        return redirect()->route('admin.importer.index')->withSuccess('importer was not found');
+    }
 }

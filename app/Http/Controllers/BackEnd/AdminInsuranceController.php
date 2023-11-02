@@ -18,4 +18,14 @@ class AdminInsuranceController extends Controller
     public function store()
     {
     }
+
+    public function destroy($id)
+    {
+        $insurance = Insurance::find($id);
+        if ($insurance) {
+            $insurance->delete();
+            return redirect()->route('admin.insurance.index')->withSuccess('Insurance deleted successfully');
+        }
+        return redirect()->route('admin.insurance.index')->withSuccess('Insurance was not found');
+    }
 }

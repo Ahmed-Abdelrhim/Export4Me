@@ -37,7 +37,7 @@
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <tr>
-                                <td>رقم المستخرج</td>
+                                <td>#</td>
                                 <td>اسم المنشأ</td>
                                 <td>اسم صاحب المنشأ</td>
                                 <td>اسم المدير المسئول</td>
@@ -115,7 +115,7 @@
                                     <td>{{ $extractor->created_at }}</td>
                                     <td>
                                         <!-- <a class="btn flat f-second fnt-xxs" href="#">تعديل</a> -->
-                                        <a class="btn outlined c-danger o-danger fnt-xxs" href="#">حذف</a>
+                                        <a class="btn outlined c-danger o-danger fnt-xxs" href="{{route('admin.extractor.destroy' , $extractor->id)}}">حذف</a>
                                     </td>
                                 </tr>
                             @empty
@@ -126,11 +126,7 @@
                         </table>
                         <nav dir="ltr" aria-label="Page navigation example">
                                 <ul class="pagination ">
-                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+                                    {{ $extractors->links() }}
                                 </ul>
                             </nav>
                     </div>

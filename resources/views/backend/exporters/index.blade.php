@@ -29,14 +29,18 @@
                 </div>
                 @include('layouts.messages')
                 <div class="jumbotron shade pt-5">
-                    <div dir="ltr" class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="search... "
-                                        aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary  c-primary" type="button"
-                                            id="button-addon2"><i class="fab fas fa-search"></i></button>
-                                    </div>
-                                </div>
+{{--                    <div dir="ltr" class="input-group mb-3">--}}
+{{--                        --}}
+{{--                                    <input type="text" class="form-control" placeholder="search... "--}}
+{{--                                        aria-label="Recipient's username" aria-describedby="button-addon2">--}}
+{{--                                    <div class="input-group-append">--}}
+{{--                                        <button class="btn btn-outline-secondary  c-primary" type="button"--}}
+{{--                                            id="button-addon2"><i class="fab fas fa-search"></i></button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+
+
+
                     <div class="table-title-action">
                         <h3 class="display-4">جدول المصدر</h3>
                         <!-- <a href="#" class="btn main f-first fnt-xxs">إضافة مصدر جديد</a> -->
@@ -45,7 +49,7 @@
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <tr>
-                                <td>رقم المصدر</td>
+                                <td>#</td>
                                 <td>اسم المنشأ</td>
                                 <td>اسم صاحب المنشأ</td>
                                 <td>اسم المدير المسئول</td>
@@ -126,7 +130,7 @@
 
                                     <td>
                                         <!-- <a class="btn flat f-second fnt-xxs" href="#">تعديل</a> -->
-                                        <a class="btn outlined c-danger o-danger fnt-xxs" href="#">حذف</a>
+                                        <a class="btn outlined c-danger o-danger fnt-xxs" href="{{route('admin.exporter.destroy' , $exporter->id)}}">حذف</a>
                                     </td>
                                 </tr>
                             @empty
@@ -138,12 +142,8 @@
 
 
                             <nav dir="ltr" aria-label="Page navigation example">
-                                <ul class="pagination ">
-                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+                                <ul class="pagination">
+                                    {{ $exporters->links() }}
                                 </ul>
                             </nav>
 

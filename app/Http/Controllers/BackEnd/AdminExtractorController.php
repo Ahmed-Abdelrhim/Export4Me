@@ -18,4 +18,14 @@ class AdminExtractorController extends Controller
     public function store()
     {
     }
+
+    public function destroy($id)
+    {
+        $extractor = Extractor::find($id);
+        if ($extractor) {
+            $extractor->delete();
+            return redirect()->route('admin.extractor.index')->withSuccess('Extractor deleted successfully');
+        }
+        return redirect()->route('admin.extractor.index')->withSuccess('Extractor was not found');
+    }
 }

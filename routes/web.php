@@ -100,27 +100,36 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
             Route::get('Importer/Index', [AdminImporterController::class, 'index'])->name('admin.importer.index');
             Route::get('Importer/Create', [AdminImporterController::class, 'create'])->name('admin.importer.create');
             Route::post('Importer/Store', [AdminImporterController::class, 'store'])->name('admin.importer.store');
+            Route::get('Importer/Destroy/{id}', [AdminImporterController::class, 'destroy'])->name('admin.importer.destroy');
 
 
             // AdminExporterController....
             Route::get('Exporter/Index', [AdminExporterController::class, 'index'])->name('admin.exporter.index');
             Route::get('Exporter/Create', [AdminExporterController::class, 'create'])->name('admin.exporter.create');
             Route::post('Exporter/Store', [AdminExporterController::class, 'store'])->name('admin.exporter.store');
+            Route::get('Exporter/Destroy/{id}', [AdminExporterController::class, 'destroy'])->name('admin.exporter.destroy');
+
 
             // AdminExtractorController....
             Route::get('Extractor/Index', [AdminExtractorController::class, 'index'])->name('admin.extractor.index');
             Route::get('Extractor/Create', [AdminExtractorController::class, 'create'])->name('admin.extractor.create');
             Route::post('Extractor/Store', [AdminExtractorController::class, 'store'])->name('admin.extractor.store');
+            Route::get('Extractor/Destroy/{id}', [AdminExtractorController::class, 'destroy'])->name('admin.extractor.destroy');
+
 
             // AdminShippingController....
             Route::get('Shipping/Index', [AdminShippingController::class, 'index'])->name('admin.shipping.index');
             Route::get('Shipping/Create', [AdminShippingController::class, 'create'])->name('admin.shipping.create');
             Route::post('Shipping/Store', [AdminShippingController::class, 'store'])->name('admin.shipping.store');
+            Route::get('Shipping/Destroy/{id}', [AdminShippingController::class, 'destroy'])->name('admin.shipping.destroy');
+
 
             // AdminInsuranceController....
             Route::get('Insurance/Index', [AdminInsuranceController::class, 'index'])->name('admin.insurance.index');
             Route::get('Insurance/Create', [AdminInsuranceController::class, 'create'])->name('admin.insurance.create');
             Route::post('Insurance/Store', [AdminInsuranceController::class, 'store'])->name('admin.insurance.store');
+            Route::get('Insurance/Destroy/{id}', [AdminInsuranceController::class, 'destroy'])->name('admin.insurance.destroy');
+
 
 
             /* manager control moduls*/

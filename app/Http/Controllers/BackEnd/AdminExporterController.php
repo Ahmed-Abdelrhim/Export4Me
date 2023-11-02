@@ -20,4 +20,14 @@ class AdminExporterController extends Controller
     public function store()
     {
     }
+
+    public function destroy($id)
+    {
+        $exporter = Exporter::find($id);
+        if ($exporter) {
+            $exporter->delete();
+            return redirect()->route('admin.exporter.index')->withSuccess('Exporter deleted successfully');
+        }
+        return redirect()->route('admin.exporter.index')->withSuccess('Exporter was not found');
+    }
 }
