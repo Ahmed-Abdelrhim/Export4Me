@@ -31,7 +31,7 @@
                 <div class="jumbotron shade pt-5">
                     <div class="table-title-action">
                         <h3 class="display-4">جدول المستخرج</h3>
-                        <a href="#" class="btn main f-first fnt-xxs">إضافة مستخرج جديد</a>
+                        <!-- <a href="#" class="btn main f-first fnt-xxs">إضافة مستخرج جديد</a> -->
                     </div>
                     <hr/>
                     <div class="table-responsive">
@@ -114,7 +114,7 @@
 
                                     <td>{{ $extractor->created_at }}</td>
                                     <td>
-                                        <a class="btn flat f-second fnt-xxs" href="#">تعديل</a>
+                                        <!-- <a class="btn flat f-second fnt-xxs" href="#">تعديل</a> -->
                                         <a class="btn outlined c-danger o-danger fnt-xxs" href="#">حذف</a>
                                     </td>
                                 </tr>

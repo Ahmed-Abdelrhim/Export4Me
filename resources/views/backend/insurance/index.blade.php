@@ -31,7 +31,7 @@
                 <div class="jumbotron shade pt-5">
                     <div class="table-title-action">
                         <h3 class="display-4">جدول شركه التأمين</h3>
-                        <a href="#" class="btn main f-first fnt-xxs">إضافة شركه تأمين جديده</a>
+                        <!-- <a href="#" class="btn main f-first fnt-xxs">إضافة شركه تأمين جديده</a> -->
                     </div>
                     <hr/>
                     <div class="table-responsive">
@@ -76,7 +76,7 @@
                                     <td>{{ $item->commercial_record }}</td>
                                     <td>{{ $item->created_at }}</td>
                                     <td>
-                                        <a class="btn flat f-second fnt-xxs" href="#">تعديل</a>
+                                        <!-- <a class="btn flat f-second fnt-xxs" href="#">تعديل</a> -->
                                         <a class="btn outlined c-danger o-danger fnt-xxs" href="#">حذف</a>
                                     </td>
                                 </tr>
