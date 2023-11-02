@@ -29,6 +29,14 @@
                 </div>
                 @include('layouts.messages')
                 <div class="jumbotron shade pt-5">
+                    <div dir="ltr" class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="search... "
+                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary  c-primary" type="button"
+                                            id="button-addon2"><i class="fab fas fa-search"></i></button>
+                                    </div>
+                                </div>
                     <div class="table-title-action">
                         <h3 class="display-4">جدول المصدر</h3>
                         <!-- <a href="#" class="btn main f-first fnt-xxs">إضافة مصدر جديد</a> -->
@@ -127,6 +135,18 @@
                                 </tr>
                             @endforelse
                         </table>
+
+
+                            <nav dir="ltr" aria-label="Page navigation example">
+                                <ul class="pagination ">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+
                     </div>
                 </div>
             </div>
