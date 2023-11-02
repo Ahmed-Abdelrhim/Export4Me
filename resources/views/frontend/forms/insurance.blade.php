@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+@extends('frontend.layouts.forms')
 @section('content')
     <div class="row">
         <form action="{{route('insurance.company.store')}}" method="POST" enctype="multipart/form-data">
@@ -91,7 +91,7 @@
             <span class="text-danger">{{$message}}</span>
             @enderror
 
-            <button class="button" type="submit">ارسال النموذج</button>
+            <button class="butto" type="submit">ارسال النموذج</button>
         </form>
     </div>
 @endsection

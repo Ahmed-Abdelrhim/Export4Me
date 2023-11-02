@@ -405,10 +405,7 @@
                             <img src="{{asset('assets/img/Oil.jpg')}}" alt="" class="popular__img" />
 
                             <div class="popular__date">
-                  <span class="section__subtitle"
-                  >Oil, sugar, corn, and flour</span
-                  >{{asset('
-                      ')}}          <!-- <h3 class="popular-title">form</h3> -->
+                  <span class="section__subtitle">Oil, sugar, corn, and flour</span>
                                 <p class="popular__description">
                                     <span href="">(Origin: Brazil, India, Kazakhstan, and Turkey)</span>
                                 </p>
@@ -580,6 +577,133 @@
             </div>
         </section>
 
+
+            <!--==================== TEAM ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container">
+          <div class="contact__content">
+            <div class="contact_data">
+              <span class="section__subtitle">TEAM</span>
+              <h2 class="section__title">OUR TEAM <span>.</span></h2>
+            </div>
+          </div>
+          <section class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="./assets/img/about-banner.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Ahmed Gomaa</span>
+          <span class="card__name">Marketing and Financial Analyst</span>
+          <ul class="social">
+              <a href="tel:+1 (514) 963-2413" class="social-link">
+                <i class="bx bxs-phone-call"></i>
+              </a>
+              <a href="mailto:Ahmed@export4me.com" class="social-link">
+                <i class="bx bxs-envelope"></i>
+              </a>
+            </ul>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="./assets/img/about-banner.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Islam Gomaa </span>
+          <span class="card__name">Business Development Manager</span>
+          <ul class="social">
+              <a href="tel:+1 (514) 651-6367" class="social-link">
+                <i class="bx bxs-phone-call"></i>
+              </a>
+              <a href="mailto:Sam@export4me.com" class="social-link">
+                <i class="bx bxs-envelope"></i>
+              </a>
+            </ul>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="./assets/img/about-banner.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Osama Gomaa</span>
+          <span class="card__name">Chief Executive Officer & Founder</span>
+          <ul class="social">
+              <a href="tel:+1 (514) 651-6367" class="social-link">
+                <i class="bx bxs-phone-call"></i>
+              </a>
+              <a href="mailto:Osama@export4me.com " class="social-link">
+                <i class="bx bxs-envelope"></i>
+              </a>
+            </ul>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="./assets/img/about-banner.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Omnia Gomaa</span>
+          <span class="card__name">Technology and Software Director</span>
+          <ul class="social">
+              <a href="tel:+1 (514) 623-1405" class="social-link">
+                <i class="bx bxs-phone-call"></i>
+              </a>
+              <a href="mailto:Omnia@export4me.com " class="social-link">
+                <i class="bx bxs-envelope"></i>
+              </a>
+            </ul>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="./assets/img/about-banner.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Amal Afify</span>
+          <span class="card__name">Human Resources Manager</span>
+          <ul class="social">
+              <a href="tel:+1 (514) 623-1995" class="social-link">
+                <i class="bx bxs-phone-call"></i>
+              </a>
+            </ul>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="./assets/img/about-banner.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Esraa Gomaa</span>
+          <span class="card__name">Market Research Analyst</span>
+          <ul class="social">
+              <a href="tel:+1 (514) 623-1995" class="social-link">
+                <i class="bx bxs-phone-call"></i>
+              </a>
+            </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+        </div>
+      </section>
+
         <!--==================== CONTACT ====================-->
         <section class="contact section" id="contact">
             <div class="contact__container container grid">
@@ -610,7 +734,7 @@
                                 <i class="bx bxs-phone-call"></i>
                                 <div>
                                     <h3 class="contact__card-title">Mobile Phone</h3>
-                                    <p class="contact__card-description">+1 (514) 651-6367</p>
+                                    <p class="contact__card-description">+1(514)651-6367</p>
                                 </div>
                             </div>
                             <a href="tel:+1 (514) 651-6367">
@@ -622,7 +746,7 @@
                                 <i class="bx bxs-envelope"></i>
                                 <div>
                                     <h3 class="contact__card-title">Email</h3>
-                                    <p class="contact__card-description">Osama@export4me.com </p>
+                                    <p class="contact__card-description">Send Email </p>
                                 </div>
                             </div>
                             <a href="mailto:Osama@export4me.com">
@@ -636,7 +760,7 @@
                                 <i class="bx bxl-gmail"></i>
                                 <div>
                                     <h3 class="contact__card-title">Gmail</h3>
-                                    <p class="contact__card-description">Osama.g600@gmail.com  </p>
+                                    <p class="contact__card-description">Send Email  </p>
                                 </div>
                             </div>
                             <a href="mailto:Osama.g600@gmail.com">
@@ -700,7 +824,7 @@
         </section>
 
         <!-- client logo section starts -->
-
+<!--
         <section class="logo-container">
             <div class="swiper logo-slider">
                 <div class="swiper-wrapper">
@@ -718,7 +842,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
 

@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+@extends('frontend.layouts.forms')
 @section('css')
 
 @endsection
@@ -123,7 +123,7 @@
             @enderror
 
 
-            <button class="button" type="submit">ارسال النموذج</button>
+            <button class="butto" type="submit">ارسال النموذج</button>
         </form>
     </div>
 @endsection

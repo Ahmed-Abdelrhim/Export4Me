@@ -1,4 +1,5 @@
-@extends('frontend.layouts.app')
+
+@extends('frontend.layouts.forms')
 @section('content')
     <!--==================== CONTACT ====================-->
     <div class="row">
@@ -230,7 +231,7 @@
             @enderror
 
 
-            <button class="button" type="submit">
+            <button class="butto" type="submit">
                 ارسال النموذج
             </button>
 
