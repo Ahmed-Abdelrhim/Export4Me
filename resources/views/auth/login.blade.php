@@ -1,5 +1,4 @@
 @extends('layouts.master')
-
 @section('content')
 @include('layouts.messages')
 <div class="container-fluid">
@@ -9,8 +8,12 @@
            <div class="row ">
                <div class="col-md-5 card shade mw-center mh-center">
 {{--                   <img src="{{asset('svg/logo.svg')}}" alt="svg/logo.svg" class="mw-center " height="150" width="150" >--}}
-{{--                   <img src="{{asset('elite_logo.Webp')}}" alt="elite logo" class="mw-center " height="150" width="150" >--}}
-                   <img src="{{asset('assets/img/zexport4me-logo.png')}}" alt="elite logo" class="mw-center " height="150" width="150" >
+{{--                   <img src="{{asset('elite_logo.Webp')}}" alt="export4Me logo" class="mw-center " height="150" width="150" >--}}
+
+{{--                   <img src="{{asset('assets/img/zexport4me-logo.png')}}" alt="export4Me logo" class="mw-center " height="150" width="150" >--}}
+
+
+                   <img src="{{asset('export4me_new_logo.png')}}" alt="export4Me logo" class="mw-center " height="150" width="150" >
 
 
                    <hr class="hr-dashed m-0">

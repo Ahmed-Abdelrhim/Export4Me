@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Agent;
+use App\Models\ContactUs;
 use App\Models\Exporter;
 use App\Models\Extractor;
 use App\Models\Importer;
@@ -27,7 +28,8 @@ class HomeController extends Controller
         $extractorsCount = Extractor::count();
         $shippingsCount = Shipping::count();
         $insuranceCount = Insurance::count();
-        return view('admin.dashboard', compact('exportersCount', 'importersCount', 'extractorsCount', 'shippingsCount' , 'insuranceCount'));
+        $contactUsCount = ContactUs::count();
+        return view('admin.dashboard', compact('exportersCount', 'importersCount', 'extractorsCount', 'shippingsCount' , 'insuranceCount' ,'contactUsCount', 'contactUsCount'));
     }
 
     public function managerHome()

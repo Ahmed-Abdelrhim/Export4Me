@@ -793,29 +793,43 @@
                     allowfullscreen=""
                     loading="lazy"
                 ></iframe>
-                <form action="">
+
+
+                <form action="{{route('contact.us.store')}}" method="POST" >
+                    @csrf
+
                     <h3>get in touch</h3>
-                    <label for=""><i class="bx bx-user"></i> Name</label>
-                    <input type="text" placeholder="enter your name" class="box" />
-                    <label for=""><i class="bx bx-envelope"></i> Email</label>
-                    <input
-                        type="email"
-                        placeholder="enter your email address"
-                        class="box"
-                    />
-                    <label for=""><i class="bx bx-phone"></i> Phone</label>
-                    <input type="number" placeholder="phone" class="box" />
-                    <label for=""
-                    ><i class="bx bx-message-rounded-dots"></i> Message</label
-                    >
-                    <textarea
-                        name=""
-                        placeholder="message"
-                        class="box"
-                        id=""
-                        cols="30"
-                        rows="10"
-                    ></textarea>
+                    <label for="contact_name"><i class="bx bx-user"></i> Name</label>
+                    <input type="text" name="contact_name" placeholder="enter your name" class="box form-control @error('contact_name') is-invalid @enderror"
+                           id="contact_name"/>
+                    @error('contact_name')
+                    <span class="text-danger">{{$message}}</span>
+                    @enderror
+
+                    <label for="contact_email"><i class="bx bx-envelope"></i> Email</label>
+                    <input type="email" name="contact_email" placeholder="enter your email address" class="box form-control @error('contact_email') is-invalid @enderror"
+                           id="contact_email"/>
+                    @error('contact_email')
+                    <span class="text-danger">{{$message}}</span>
+                    @enderror
+
+                    <label for="contact_phone"><i class="bx bx-phone"></i> Phone</label>
+                    <input type="text"  name="contact_phone" placeholder="phone" class="box form-control
+                    @error('contact_phone') is-invalid @enderror" id="contact_phone"/>
+                    @error('contact_phone')
+                    <span class="text-danger">{{$message}}</span>
+                    @enderror
+
+                    <label for="contact_message">
+                        <i class="bx bx-message-rounded-dots"></i> Message</label>
+                    <textarea name="contact_message" placeholder="message" id="contact_message"
+                        class="box form-control  @error('contact_message') is-invalid @enderror" cols="30" rows="10">
+                    </textarea>
+                    @error('contact_message')
+                    <span class="text-danger">{{$message}}</span>
+                    @enderror
+
+
                     <button class="button" type="submit">
                         send message <i class="bx bx-send"></i>
                     </button>

@@ -9,7 +9,7 @@ class AdminShippingController extends Controller
 {
     public function index()
     {
-        $shippings = Shipping::orderBy('id' , 'desc')->paginate(1);
+        $shippings = Shipping::orderBy('id' , 'desc')->paginate(25);
         return view('backend.shipping.index', compact('shippings'));
     }
 

@@ -33,16 +33,21 @@
                 <div class="col-md-4 d-none d-md-block">
                     <div class="jumbotron glass profile">
                       <div class="card-body">
-                        <div class="profile_img">
-                            <img src="{{ asset('images/' . auth('web')->user()->profile_img ) }}" alt="logo">
-                        </div>
+{{--                        <div class="profile_img">--}}
+{{--                            <img src="{{ asset('images/' . auth('web')->user()->profile_img ) }}" alt="logo">--}}
+{{--                        </div>--}}
+
                         <div class="list-group list-group-flush" role="tablist">
                             <a class="list-group-item list-group-item-action active" data-toggle="list" href="#profile" role="tab">
                               معلوماتك الشخصية
                             </a>
-                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#support" role="tab">
-                              الدعم
-                            </a>
+
+
+{{--                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#support" role="tab">--}}
+{{--                              الدعم--}}
+{{--                            </a>--}}
+
+
                         </div>
                       </div>
                     </div>

@@ -57,6 +57,14 @@
                     </a>
                 </li>
 
+
+                <li class="side-item">
+                    <a href="{{ route('admin.contact.index') }}">
+                        تواصل معنا
+                    </a>
+                </li>
+
+
                 {{--                <li class="side-item">--}}
                 {{--                    <a href="{{ route('admin.agent.index') }}">--}}
                 {{--                        <i class="fas fa-angle-right mr-2"></i>--}}

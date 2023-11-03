@@ -72,6 +72,15 @@
                     </a>
                 </div>
 
+                <div class="col-md-6 mb-3">
+                    <a href="{{route('admin.contact.index')}}">
+                        <div class="box-card mini animate__animated animate__flipInY   "><i class="fab far fa-chart-bar b-first" aria-hidden="true"></i>
+                            <span class="c-first">عدد تواصل معنا </span>
+                            <span class="h3">{{ $contactUsCount }}</span>
+                        </div>
+                    </a>
+                </div>
+
 
             </div>
         </div>

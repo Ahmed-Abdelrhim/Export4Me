@@ -8,6 +8,7 @@ use App\Http\Controllers\Agent\AgentSetController;
 use App\Http\Controllers\Agent\VistorsController;
 use App\Http\Controllers\BackEnd\AdminImporterController;
 use App\Http\Controllers\BackEnd\AdminExporterController;
+use App\Http\Controllers\BackEnd\ContactUsController;
 use App\Http\Controllers\Frontend\ExporterController;
 use App\Http\Controllers\Frontend\ExtractorController;
 
@@ -45,6 +46,7 @@ All Users Routes List
 --------------------------------------------
 --------------------------------------------*/
 
+
 Route::group(['middleware' => 'prevent-back-history'], function () {
 
 
@@ -66,13 +68,17 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
 
 
 // Form Submission.............
-#exporter From
+    #exporter From
     Route::post('exporter/store', [ExporterController::class, 'store'])->name('exporter.store');
     Route::post('importer/store', [ImporterController::class, 'store'])->name('importer.store');
     Route::post('extractor/store', [ExtractorController::class, 'store'])->name('extractor.store');
 
     Route::post('insurance/company/store', [InsuranceController::class, 'store'])->name('insurance.company.store');
     Route::post('shipping/company/store', [ShippingController::class, 'store'])->name('shipping.company.store');
+
+    #contactUs From
+    Route::post('Contact/Store', [ContactUsController::class, 'store'])->name('contact.us.store');
+
 
 // Form Submission.............
 
@@ -129,6 +135,12 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
             Route::get('Insurance/Create', [AdminInsuranceController::class, 'create'])->name('admin.insurance.create');
             Route::post('Insurance/Store', [AdminInsuranceController::class, 'store'])->name('admin.insurance.store');
             Route::get('Insurance/Destroy/{id}', [AdminInsuranceController::class, 'destroy'])->name('admin.insurance.destroy');
+
+
+            // AdminContactUsController....
+            Route::get('Contact/Index', [ContactUsController::class, 'index'])->name('admin.contact.index');
+            Route::get('Contact/Create', [ContactUsController::class, 'create'])->name('admin.contact.create');
+            Route::get('Contact/Destroy/{id}', [ContactUsController::class, 'destroy'])->name('admin.contact.destroy');
 
 
 
