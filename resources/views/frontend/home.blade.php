@@ -83,7 +83,7 @@
                     <div class="home__orbe"></div>
 
                     <div class="home__img">
-                        <img src="{{asset('assets/img/ex.jpg')}}" alt="home" />
+                        <img src="{{asset('assets/img/ex4me.jpg')}}" alt="home" />
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                 <div class="value__images">
                     <div class="value__orbe"></div>
                     <div class="value__img">
-                        <img src="{{asset('assets/img/about-banner.jpg')}}" alt="value" />
+                        <img src="{{asset('assets/img/team.jpg')}}" alt="value" />
                     </div>
                 </div>
                 <div class="value__content">
@@ -593,7 +593,7 @@
 
       <div class="card swiper-slide">
         <div class="card__image">
-          <img src="./assets/img/about-banner.jpg" alt="card image">
+          <img src="./assets/img/EXPORT 4 ME TEAM.jpg" alt="card image">
         </div>
 
         <div class="card__content">
@@ -612,7 +612,7 @@
 
       <div class="card swiper-slide">
         <div class="card__image">
-          <img src="./assets/img/about-banner.jpg" alt="card image">
+          <img src="./assets/img/EXPORT 4 ME TEAM.jpg" alt="card image">
         </div>
 
         <div class="card__content">
@@ -631,7 +631,7 @@
 
       <div class="card swiper-slide">
         <div class="card__image">
-          <img src="./assets/img/about-banner.jpg" alt="card image">
+          <img src="./assets/img/EXPORT 4 ME TEAM.jpg" alt="card image">
         </div>
 
         <div class="card__content">
@@ -650,7 +650,7 @@
 
       <div class="card swiper-slide">
         <div class="card__image">
-          <img src="./assets/img/about-banner.jpg" alt="card image">
+          <img src="./assets/img/EXPORT 4 ME TEAM.jpg" alt="card image">
         </div>
 
         <div class="card__content">
@@ -669,7 +669,7 @@
 
       <div class="card swiper-slide">
         <div class="card__image">
-          <img src="./assets/img/about-banner.jpg" alt="card image">
+          <img src="./assets/img/EXPORT 4 ME TEAM.jpg" alt="card image">
         </div>
 
         <div class="card__content">
@@ -685,7 +685,7 @@
 
       <div class="card swiper-slide">
         <div class="card__image">
-          <img src="./assets/img/about-banner.jpg" alt="card image">
+          <img src="./assets/img/EXPORT 4 ME TEAM.jpg" alt="card image">
         </div>
 
         <div class="card__content">
@@ -710,7 +710,7 @@
                 <div class="contact__images">
                     <div class="contact__orbe"></div>
                     <div class="contact__img">
-                        <img src="{{asset('assets/img/about-banner.jpg')}}" alt="contact" />
+                        <img src="{{asset('assets/img/x4.jpg')}}" alt="contact" />
                     </div>
                 </div>
                 <div class="contact__content">
