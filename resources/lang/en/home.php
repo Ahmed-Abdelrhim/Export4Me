@@ -111,6 +111,20 @@ return [
     'textile_desc' => 'from ready-made women\'s underwear to children\'s clothes and curtain fabrics.',
 
 
+    'our_values' => 'Our Values',
+    'our_mission' => 'Our mission',
+    'our_vision' => 'Our vision',
+    'our_values_desc' => 'Discover Emirates Group today and embark on a journey of
+                    limitless possibilities in the world of international trade. Your success is our business.',
+
+    'our_mission_desc' => 'Our mission is to increase the volume of Egyptian exports,
+                                instill external confidence in Egyptian products, and expand the global reach of
+                                Egyptian factories. We are dedicated to delivering excellence in marketing and
+                                export performance.',
+    'our_vision_desc' => 'Our vision is clear – we aim to foster economic relationships that elevate the status of
+                                Egyptian products in the global marketplace.',
+
+
 
     '' => '',
     '' => '',

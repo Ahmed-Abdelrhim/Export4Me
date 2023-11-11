@@ -522,10 +522,9 @@
         <!--==================== SUBSCRIBE ====================-->
         <section class="subscribe section">
             <div class="subscribe__container container">
-                <h2 class="section__title">Our Values <span>.</span></h2>
+                <h2 class="section__title"> {{__('home.our_values')}} <span>.</span></h2>
                 <p class="home__description">
-                    Discover Emirates Group today and embark on a journey of
-                    limitless possibilities in the world of international trade. Your success is our business.
+                    {{__('home.our_values_desc')}}
                 </p>
 
                 <!-- <img src="./assets/img/newsletter-banner.png" alt="" /> -->
@@ -534,7 +533,7 @@
                     <div class="value__accordion-item">
                         <header class="value__accordion-header">
                             <i class="bx bxs-check-shield value__accordion-icon"></i>
-                            <h3 class="value__accordion-title">Our mission</h3>
+                            <h3 class="value__accordion-title"> {{__('home.our_mission')}}  </h3>
                             <div class="value__accordion-arrow">
                                 <i class="bx bxs-down-arrow"></i>
                             </div>
@@ -542,17 +541,15 @@
 
                         <div class="value__accordion-content">
                             <p class="value__accordion-description">
-                                Our mission is to increase the volume of Egyptian exports,
-                                instill external confidence in Egyptian products, and expand the global reach of
-                                Egyptian factories. We are dedicated to delivering excellence in marketing and
-                                export performance.
+                                {{__('home.our_mission_desc')}}
+
                             </p>
                         </div>
                     </div>
                     <div class="value__accordion-item">
                         <header class="value__accordion-header">
                             <i class="bx bxs-check-shield value__accordion-icon"></i>
-                            <h3 class="value__accordion-title">Our vision</h3>
+                            <h3 class="value__accordion-title">{{__('home.our_vision')}} </h3>
                             <div class="value__accordion-arrow">
                                 <i class="bx bxs-down-arrow"></i>
                             </div>
@@ -560,8 +557,8 @@
 
                         <div class="value__accordion-content">
                             <p class="value__accordion-description">
-                                Our vision is clear – we aim to foster economic relationships that elevate the status of
-                                Egyptian products in the global marketplace.
+
+                                {{__('home.our_vision_desc')}}
                             </p>
                         </div>
                     </div>
