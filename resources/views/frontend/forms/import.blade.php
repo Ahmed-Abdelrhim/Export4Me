@@ -80,7 +80,7 @@
 
             <label for=""> التليفون الأرضي </label>
 {{--            <input type="number" placeholder="ادخل رقم التليفون الأرضي" class="box form-control" name="landline" required value="{{old('landline')}}" />--}}
-            <input type="number" placeholder="02xxxxxxxx" class="box form-control  @error('landline') is-invalid @enderror"
+            <input type="text" placeholder="02xxxxxxxx" class="box form-control  @error('landline') is-invalid @enderror"
                    name="landline" required value="{{old('landline')}}" />
                 @error('landline')
                 <span class="text-danger">{{$message}}</span>
@@ -88,7 +88,7 @@
 
             <label for=""> الهاتف المحمول</label>
 {{--            <input type="number" placeholder="ادخل رقم الهاتف المحمول" class="box form-control" name="phone_number" required value="{{old('phone_number')}}" />--}}
-            <input type="number" placeholder="01xxxxxxxxx" class="box form-control  @error('phone_number') is-invalid @enderror"
+            <input type="text" placeholder="01xxxxxxxxx" class="box form-control  @error('phone_number') is-invalid @enderror"
                    name="phone_number" required value="{{old('phone_number')}}" />
                 @error('phone_number')
                 <span class="text-danger">{{$message}}</span>

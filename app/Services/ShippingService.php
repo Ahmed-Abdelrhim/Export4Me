@@ -33,7 +33,7 @@ class ShippingService
 
         $commercial_record = NULL;
         if (isset($data['commercial_record'])) {
-            $commercial_recordArray = $this->storeImage($data['commercial_record'], 'images/shipping/commercial_records', false, '200', '200');
+            $commercial_recordArray = $this->storeImage($data['commercial_record'], 'images/shipping/commercial_records', true, '200', '200');
             $commercial_record = $commercial_recordArray['hashName'];
         }
 

@@ -71,13 +71,13 @@ class ImporterService
 
         $commercial_record = NULL;
         if (isset($data['commercial_record'])) {
-            $commercial_recordArray = $this->storeImage($data['commercial_record'] , 'images/importers/commercial_records', false , '200' ,'200');
+            $commercial_recordArray = $this->storeImage($data['commercial_record'] , 'images/importers/commercial_records', true , '200' ,'200');
             $commercial_record = $commercial_recordArray['hashName'];
         }
 
         $product_catalog = NULL;
         if (isset($data['product_catalog'])) {
-            $product_catalogArray = $this->storeImage($data['product_catalog'] , 'images/importers/product_catalog' , false , '200' , '200');
+            $product_catalogArray = $this->storeImage($data['product_catalog'] , 'images/importers/product_catalog' , true , '200' , '200');
             $product_catalog = $product_catalogArray['hashName'];
         }
 

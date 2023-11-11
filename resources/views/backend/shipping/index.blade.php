@@ -77,9 +77,24 @@
 
 
                                     <td>{{ $shipping->shipping_types }}</td>
-                                    <td>{{ $shipping->commercial_record }}</td>
 
-                                    <td>{{ $shipping->created_at }}</td>
+
+
+                                    <!-- Shipping Commercial Record -->
+                                    <td>
+                                        @if(!empty($shipping->commercial_record))
+                                            <img src="{{asset('images/shipping/commercial_records/'. $shipping->commercial_record )}}"
+                                                 alt="not-found" width="100px" height="100px;"/>
+                                        @else
+                                            No Image Uploaded
+                                        @endif
+                                    </td>
+
+                                    <!-- Created At -->
+                                    <td>
+                                        {{ \Carbon\Carbon::parse($shipping->created_at)->format('d-M-Y H:i') }}
+                                    </td>
+
                                     <td>
                                         <!-- <a class="btn flat f-second fnt-xxs" href="#">تعديل</a> -->
                                         <a class="btn outlined c-danger o-danger fnt-xxs" href="{{route('admin.shipping.destroy' , $shipping->id)}}">حذف</a>

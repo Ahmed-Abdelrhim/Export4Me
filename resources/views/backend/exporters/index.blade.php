@@ -29,16 +29,15 @@
                 </div>
                 @include('layouts.messages')
                 <div class="jumbotron shade pt-5">
-{{--                    <div dir="ltr" class="input-group mb-3">--}}
-{{--                        --}}
-{{--                                    <input type="text" class="form-control" placeholder="search... "--}}
-{{--                                        aria-label="Recipient's username" aria-describedby="button-addon2">--}}
-{{--                                    <div class="input-group-append">--}}
-{{--                                        <button class="btn btn-outline-secondary  c-primary" type="button"--}}
-{{--                                            id="button-addon2"><i class="fab fas fa-search"></i></button>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-
+                    {{--                    <div dir="ltr" class="input-group mb-3">--}}
+                    {{--                        --}}
+                    {{--                                    <input type="text" class="form-control" placeholder="search... "--}}
+                    {{--                                        aria-label="Recipient's username" aria-describedby="button-addon2">--}}
+                    {{--                                    <div class="input-group-append">--}}
+                    {{--                                        <button class="btn btn-outline-secondary  c-primary" type="button"--}}
+                    {{--                                            id="button-addon2"><i class="fab fas fa-search"></i></button>--}}
+                    {{--                                    </div>--}}
+                    {{--                                </div>--}}
 
 
                     <div class="table-title-action">
@@ -66,22 +65,22 @@
 
                                 <td>اسم المنتج المراد تصديره</td>
 
-                                <td>شرح تفصيلي للمنتج </td>
-                                <td>كميه الإنتاج الشهري /السنوي </td>
-                                <td> هل تبيع في السوق المحلي </td>
-                                <td>بلد صدرت لها من قبل ان وجدت </td>
-                                <td>قيمه ماسبق التصدير </td>
-                                <td>البلد او المنطقه او القاره </td>
-                                <td> شركه شحن تم التعامل معها من قبل </td>
-                                <td>القطاع </td>
+                                <td>شرح تفصيلي للمنتج</td>
+                                <td>كميه الإنتاج الشهري /السنوي</td>
+                                <td> هل تبيع في السوق المحلي</td>
+                                <td>بلد صدرت لها من قبل ان وجدت</td>
+                                <td>قيمه ماسبق التصدير</td>
+                                <td>البلد او المنطقه او القاره</td>
+                                <td> شركه شحن تم التعامل معها من قبل</td>
+                                <td>القطاع</td>
 
-                                <td>هل لديك سجل مصدرين ساري </td>
-                                <td>هل تربد تدبير أوراق تصدير </td>
-                                <td>هل علي استعداد استقبال فريق التصوير </td>
+                                <td>هل لديك سجل مصدرين ساري</td>
+                                <td>هل تربد تدبير أوراق تصدير</td>
+                                <td>هل علي استعداد استقبال فريق التصوير</td>
 
 
-                                <td>السجل التجاري </td>
-                                <td>بروشور للمنتج </td>
+                                <td>السجل التجاري</td>
+                                <td>بروشور للمنتج</td>
 
                                 <td> تاريخ الإنشاء</td>
                                 <td>اتخاذ إجراء</td>
@@ -93,7 +92,6 @@
                                     <td>{{ $exporter->owner_name }}</td>
                                     <td>{{ $exporter->manager_name }}</td>
                                     <td>{{ $exporter->factory_address }}</td>
-
 
 
                                     <td>{{ $exporter->country }}</td>
@@ -124,13 +122,39 @@
                                     <td>{{ $exporter->photo_team == 1 ? 'نعم' : 'لا' }}</td>
 
 
-                                    <td>{{ $exporter->commercial_record }}</td>
-                                    <td>{{ $exporter->product_brochure }}</td>
-                                    <td>{{ $exporter->created_at }}</td>
+
+                                    <!-- Product Commercial Record -->
+                                    <td>
+                                        @if(!empty($exporter->commercial_record))
+                                            <img src="{{asset('images/exporters/commercial_records/'. $exporter->commercial_record )}}"
+                                                 alt="not-found" width="100px" height="100px;"/>
+                                        @else
+                                            No Image Uploaded
+                                        @endif
+                                    </td>
+
+
+
+                                    <!-- Product Brochure -->
+                                    <td>
+                                        @if(!empty($exporter->product_brochure))
+                                            <img src="{{asset('images/exporters/product_brochure/'. $exporter->product_brochure )}}"
+                                                 alt="not-found" width="100px" height="100px;"/>
+                                        @else
+                                            No Image Uploaded
+                                        @endif
+                                    </td>
+
+
+                                    <!-- Created At -->
+                                    <td>
+                                        {{ \Carbon\Carbon::parse($exporter->created_at)->format('d-M-Y H:i') }}
+                                    </td>
 
                                     <td>
-                                        <!-- <a class="btn flat f-second fnt-xxs" href="#">تعديل</a> -->
-                                        <a class="btn outlined c-danger o-danger fnt-xxs" href="{{route('admin.exporter.destroy' , $exporter->id)}}">حذف</a>
+                                        <a class="btn outlined c-danger o-danger fnt-xxs"
+                                           href="{{route('admin.exporter.destroy' , $exporter->id)}}">حذف
+                                        </a>
                                     </td>
                                 </tr>
                             @empty
@@ -141,11 +165,11 @@
                         </table>
 
 
-                            <nav dir="ltr" aria-label="Page navigation example">
-                                <ul class="pagination">
-                                    {{ $exporters->links() }}
-                                </ul>
-                            </nav>
+                        <nav dir="ltr" aria-label="Page navigation example">
+                            <ul class="pagination">
+                                {{ $exporters->links() }}
+                            </ul>
+                        </nav>
 
                     </div>
                 </div>

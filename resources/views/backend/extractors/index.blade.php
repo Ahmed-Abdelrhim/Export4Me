@@ -84,7 +84,7 @@
                                         @endif
 
                                         @if($extractor->harbor_type == 2)
-                                            <td> وارد </td>
+                                            <td> وارد</td>
                                         @endif
                                     @else
                                         --
@@ -109,13 +109,39 @@
                                     @endif
 
 
-                                    <td>{{ $extractor->commercial_record }}</td>
-                                    <td>{{ $extractor->license }}</td>
+                                    <!-- Extractor Commercial Record -->
+                                    <td>
+                                        @if(!empty($extractor->commercial_record))
+                                            <img src="{{asset('images/extractors/commercial_records/'. $extractor->commercial_record )}}"
+                                                 alt="not-found" width="100px" height="100px;"/>
+                                        @else
+                                            No Image Uploaded
+                                        @endif
+                                    </td>
 
-                                    <td>{{ $extractor->created_at }}</td>
+
+                                    <!-- Extractor License  -->
+                                    <td>
+                                        @if(!empty($extractor->license))
+                                            <img src="{{asset('images/extractors/licences/'. $extractor->license )}}"
+                                                 alt="not-found" width="100px" height="100px;"/>
+                                        @else
+                                            No Image Uploaded
+                                        @endif
+                                    </td>
+
+
+                                    <!-- Created At -->
+                                    <td>
+                                        {{ \Carbon\Carbon::parse($extractor->created_at)->format('d-M-Y H:i') }}
+                                    </td>
+
+
+
                                     <td>
                                         <!-- <a class="btn flat f-second fnt-xxs" href="#">تعديل</a> -->
-                                        <a class="btn outlined c-danger o-danger fnt-xxs" href="{{route('admin.extractor.destroy' , $extractor->id)}}">حذف</a>
+                                        <a class="btn outlined c-danger o-danger fnt-xxs"
+                                           href="{{route('admin.extractor.destroy' , $extractor->id)}}">حذف</a>
                                     </td>
                                 </tr>
                             @empty
@@ -125,10 +151,10 @@
                             @endforelse
                         </table>
                         <nav dir="ltr" aria-label="Page navigation example">
-                                <ul class="pagination ">
-                                    {{ $extractors->links() }}
-                                </ul>
-                            </nav>
+                            <ul class="pagination ">
+                                {{ $extractors->links() }}
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>

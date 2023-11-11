@@ -31,7 +31,7 @@ class ExtractorRequest extends FormRequest
 
             'shipping_types' => ['required', 'string' ,'min:5' , 'max:255'],
             'harbor_type' => ['required', 'in:1,2'],
-            'clearance_type' => ['required', 'in:1,2'],
+            'clearance_type' => ['required', 'in:1,2,3'],
 
             'commercial_record' => ['nullable', 'image', 'max:4100', 'mimes:jpg,png,jpeg,webp'],
             'license'  => ['nullable', 'image', 'max:4100', 'mimes:jpg,png,jpeg,webp'],

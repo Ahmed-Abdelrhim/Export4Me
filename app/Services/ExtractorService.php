@@ -39,13 +39,13 @@ class ExtractorService
 
         $commercial_record = NULL;
         if (isset($data['commercial_record'])) {
-            $commercial_recordArray = $this->storeImage($data['commercial_record'], 'images/extractors/commercial_records', false, '200', '200');
+            $commercial_recordArray = $this->storeImage($data['commercial_record'], 'images/extractors/commercial_records', true, '200', '200');
             $commercial_record = $commercial_recordArray['hashName'];
         }
 
         $licence = NULL;
-        if (isset($data['licence'])) {
-            $licenceArray = $this->storeImage($data['licence'], 'images/extractors/product_catalog', false, '200', '200');
+        if (isset($data['license'])) {
+            $licenceArray = $this->storeImage($data['license'], 'images/extractors/licences', true, '200', '200');
             $licence = $licenceArray['hashName'];
         }
 
@@ -62,7 +62,7 @@ class ExtractorService
                 'email' => $email,
 
                 'landline' => $landline,
-                'phone_number' => $phone_number,
+                'mobile_phone' => $phone_number,
 
 
                 'shipping_types' => $shipping_types,
@@ -71,7 +71,8 @@ class ExtractorService
 
 
                 'commercial_record' => $commercial_record,
-                'licence' => $licence,
+                'license' => $licence,
+
                 'created_at' => Carbon::now(),
             ]);
             DB::Commit();

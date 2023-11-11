@@ -99,13 +99,37 @@
 
                                     <td>{{ $importer->sector }}</td>
                                     <td>{{ $importer->is_agreed_to_import == 1 ? 'نعم' : 'لا' }}</td>
-                                    <td>{{ $importer->commercial_record }}</td>
-                                    <td>{{ $importer->product_catalog }}</td>
 
 
-                                    <td>{{ $importer->created_at }}</td>
+
+                                    <!-- Importer Commercial Record  -->
                                     <td>
-                                        <!-- <a class="btn flat f-second fnt-xxs" href="#">تعديل</a> -->
+                                        @if(!empty($importer->commercial_record))
+                                            <img src="{{asset('images/importers/commercial_records/'. $importer->commercial_record )}}"
+                                                 alt="not-found" width="100px" height="100px;"/>
+                                        @else
+                                            No Image Uploaded
+                                        @endif
+                                    </td>
+
+
+                                    <!-- Importer Product Catalog   -->
+                                    <td>
+                                        @if(!empty($importer->product_catalog))
+                                            <img src="{{asset('images/importers/product_catalog/'. $importer->product_catalog )}}"
+                                                 alt="not-found" width="100px" height="100px;"/>
+                                        @else
+                                            No Image Uploaded
+                                        @endif
+                                    </td>
+
+
+
+                                    <!-- Created At -->
+                                    <td>
+                                        {{ \Carbon\Carbon::parse($importer->created_at)->format('d-M-Y H:i') }}
+                                    </td>
+                                    <td>
                                         <a class="btn outlined c-danger o-danger fnt-xxs" href="{{route('admin.importer.destroy' , $importer->id)}}">حذف</a>
                                     </td>
                                 </tr>

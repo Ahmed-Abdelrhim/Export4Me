@@ -73,8 +73,20 @@
                                     <td>{{ $item->mobile_phone }}</td>
 
 
-                                    <td>{{ $item->commercial_record }}</td>
-                                    <td>{{ $item->created_at }}</td>
+                                    <!-- Insurance Commercial Record -->
+                                    <td>
+                                        @if(!empty($item->commercial_record))
+                                            <img src="{{asset('images/insurance/commercial_records/'. $item->commercial_record )}}"
+                                                 alt="not-found" width="100px" height="100px;"/>
+                                        @else
+                                            No Image Uploaded
+                                        @endif
+                                    </td>
+
+                                    <!-- Created At -->
+                                    <td>
+                                        {{ \Carbon\Carbon::parse($item->created_at)->format('d-M-Y H:i') }}
+                                    </td>
                                     <td>
                                         <!-- <a class="btn flat f-second fnt-xxs" href="#">تعديل</a> -->
                                         <a class="btn outlined c-danger o-danger fnt-xxs" href="{{route('admin.insurance.destroy' , $item->id)}}">حذف</a>

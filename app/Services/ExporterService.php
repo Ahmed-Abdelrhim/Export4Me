@@ -82,13 +82,13 @@ class ExporterService
 
         $commercial_record = NULL;
         if (isset($data['commercial_record'])) {
-            $product_brochureArray = $this->storeImage($data['product_brochure'] , 'images/exporters/commercial_records', false , '200' ,'200');
+            $product_brochureArray = $this->storeImage($data['product_brochure'] , 'images/exporters/commercial_records', true , '200' ,'200');
             $commercial_record = $product_brochureArray['hashName'];
         }
 
         $product_brochure = NULL;
         if (isset($data['product_brochure'])) {
-            $product_brochureArray = $this->storeImage($data['product_brochure'] , 'images/exporters/product_brochure' , false , '200' , '200');
+            $product_brochureArray = $this->storeImage($data['product_brochure'] , 'images/exporters/product_brochure' , true , '200' , '200');
             $product_brochure = $product_brochureArray['hashName'];
         }
 
