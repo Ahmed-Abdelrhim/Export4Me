@@ -41,6 +41,23 @@
                         <span> {{ __('home.nav_contact') }} </span>
                     </a>
                 </li>
+
+                @if (app()->getLocale() == 'en')
+                    <li class="nav__item">
+                        <a href="{{route('setLocale', 'ar')}}" class="nav__link">
+                            <i class="bx bx-world"></i>
+                            <span> Ar </span>
+                        </a>
+                    </li>
+                    @else
+                    <li class="nav__item">
+                        <a href="{{route('setLocale', 'en')}}" class="nav__link">
+                            <i class="bx bx-world"></i>
+                            <span> EN </span>
+                        </a>
+                    </li>
+                @endif
+
             </ul>
         </div>
 

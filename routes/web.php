@@ -28,6 +28,7 @@ use App\Http\Controllers\BackEnd\AdminExtractorController;
 use App\Http\Controllers\BackEnd\AdminShippingController;
 use App\Http\Controllers\BackEnd\AdminInsuranceController;
 
+use App\Http\Controllers\LocalizationController;
 
 /*
 |--------------------------------------------------------------------------
