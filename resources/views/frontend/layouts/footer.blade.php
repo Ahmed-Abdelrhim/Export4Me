@@ -6,56 +6,56 @@
                 <img src="assets/img/zexport4me-logo.png" alt="logo" />
             </a>
             <p class="footer__description">
-                H.office: 56 abbas akkad nasr city - cairo egypt<br />
-                B. office: 1 Palestine & Al-Jabarti st Dream Tower - Port said
+                {{ __('home.address_first') }}<br />
+                {{ __('home.address_second') }}
             </p>
         </div>
 
         <div class="footer__content">
             <div>
-                <h3 class="footer__title">About</h3>
+                <h3 class="footer__title">  {{ __('home.about_footer') }} </h3>
                 <ul class="footer__links">
                     <li>
-                        <a href="#" class="footer__link">About Us</a>
+                        <a href="#" class="footer__link">{{ __('home.about') }}</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Features</a>
+                        <a href="#" class="footer__link">{{ __('home.fea') }}</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">New & Blog</a>
+                        <a href="#" class="footer__link">{{ __('home.new_and_blog') }}</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h3 class="footer__title">Company</h3>
+                <h3 class="footer__title">{{ __('home.company') }}</h3>
                 <ul class="footer__links">
                     <li>
-                        <a href="#" class="footer__link">How we Work</a>
+                        <a href="#" class="footer__link">{{ __('home.how_we_work') }}</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Capital</a>
+                        <a href="#" class="footer__link">{{ __('home.cap') }}</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Security</a>
+                        <a href="#" class="footer__link">{{ __('home.sec') }}</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h3 class="footer__title">Support</h3>
+                <h3 class="footer__title">{{ __('home.support') }}</h3>
                 <ul class="footer__links">
                     <li>
-                        <a href="#" class="footer__link">FAQs</a>
+                        <a href="#" class="footer__link">{{ __('home.faq') }}</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Support Center</a>
+                        <a href="#" class="footer__link">{{ __('home.support_center') }}</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Contact Us</a>
+                        <a href="#" class="footer__link">{{ __('home.contact_us') }}</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h3 class="footer__title">Follow Us</h3>
+                <h3 class="footer__title">{{ __('home.follow') }}</h3>
                 <ul class="footer__social">
                     <a href="" class="footer__social-link">
                         <i class="bx bxl-facebook-circle"></i>
@@ -82,11 +82,20 @@
 
     <div class="footer__info container">
         <span class="footer__copy">
-          &#169; Export 4 Me. All rights reserved
+          &#169;
+          @if (app()->getLocale() == 'ar')
+                Export 4 Me
+                كل الحقوق محفوظة لصالح
+              @else
+              Export 4 Me. All rights reserved
+
+          @endif
+
+
         </span>
         <div class="footer__privacy">
-            <a href="#">Terms & conditions</a>
-            <a href="#">Privacy Policy</a>
+            <a href="#"> {{ __('home.terms') }} </a>
+            <a href="#">{{ __('home.privacy_and_policy') }}</a>
         </div>
     </div>
 </footer>

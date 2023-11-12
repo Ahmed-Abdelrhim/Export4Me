@@ -574,8 +574,8 @@
             <div class="contact__container container">
                 <div class="contact__content">
                     <div class="contact_data">
-                        <span class="section__subtitle">TEAM</span>
-                        <h2 class="section__title">OUR TEAM <span>.</span></h2>
+                        <span class="section__subtitle"> {{ __('home.team') }} </span>
+                        <h2 class="section__title"> {{ __('home.our_team') }} <span>.</span></h2>
                     </div>
                 </div>
                 <section class="swiper mySwiper">
@@ -589,7 +589,7 @@
 
                             <div class="card__content">
                                 <span class="card__title">Ahmed Gomaa</span>
-                                <span class="card__name">Marketing and Financial Analyst</span>
+                                <span class="card__name"> {{ __('home.mar') }} </span>
                                 <ul class="social">
                                     <a href="tel:+1 (514) 963-2413" class="social-link">
                                         <i class="bx bxs-phone-call"></i>
@@ -608,7 +608,7 @@
 
                             <div class="card__content">
                                 <span class="card__title">Islam Gomaa </span>
-                                <span class="card__name">Business Development Manager</span>
+                                <span class="card__name">{{ __('home.bus') }}</span>
                                 <ul class="social">
                                     <a href="tel:+1 (514) 651-6367" class="social-link">
                                         <i class="bx bxs-phone-call"></i>
@@ -627,7 +627,7 @@
 
                             <div class="card__content">
                                 <span class="card__title">Osama Gomaa</span>
-                                <span class="card__name">Chief Executive Officer & Founder</span>
+                                <span class="card__name">{{ __('home.ch') }}</span>
                                 <ul class="social">
                                     <a href="tel:+1 (514) 651-6367" class="social-link">
                                         <i class="bx bxs-phone-call"></i>
@@ -646,7 +646,7 @@
 
                             <div class="card__content">
                                 <span class="card__title">Omnia Gomaa</span>
-                                <span class="card__name">Technology and Software Director</span>
+                                <span class="card__name">{{ __('home.tech') }}</span>
                                 <ul class="social">
                                     <a href="tel:+1 (514) 623-1405" class="social-link">
                                         <i class="bx bxs-phone-call"></i>
@@ -665,7 +665,7 @@
 
                             <div class="card__content">
                                 <span class="card__title">Amal Afify</span>
-                                <span class="card__name">Human Resources Manager</span>
+                                <span class="card__name">{{ __('home.human') }}</span>
                                 <ul class="social">
                                     <a href="tel:+1 (514) 623-1995" class="social-link">
                                         <i class="bx bxs-phone-call"></i>
@@ -681,7 +681,7 @@
 
                             <div class="card__content">
                                 <span class="card__title">Esraa Gomaa</span>
-                                <span class="card__name">Market Research Analyst</span>
+                                <span class="card__name">{{ __('home.mar') }}</span>
                                 <ul class="social">
                                     <a href="tel:+1 (514) 623-1995" class="social-link">
                                         <i class="bx bxs-phone-call"></i>
@@ -706,25 +706,26 @@
                 </div>
                 <div class="contact__content">
                     <div class="contact_data">
-                        <span class="section__subtitle">Contact Us</span>
-                        <h2 class="section__title">Easy to Contact Us <span>.</span></h2>
-                        <h3>Addres</h3>
+                        <span class="section__subtitle"> {{ __('home.contact_us') }} </span>
+                        <h2 class="section__title"> {{ __('home.easy_contact') }} <span>.</span></h2>
+                        <h3>{{ __('home.address') }}</h3>
                         <p class="contact__description">
-                            H.office: 56 abbas akkad nasr city - cairo egypt <br/>
-                            B. office: 1 Palestine & Al-Jabarti st Dream Tower - Port said
+                            {{ __('home.address_first') }} <br/>
+                            {{ __('home.address_second') }}
+
                         </p>
                     </div>
 
                     <h3>Osama Gomaa</h3>
                     <p class="contact__description">
-                        Chief Executive Officer & Founder
+                        {{ __('home.chief') }}
                     </p>
                     <div class="contact__card">
                         <div class="contact__card-box">
                             <div class="contact__card-info">
                                 <i class="bx bxs-phone-call"></i>
                                 <div>
-                                    <h3 class="contact__card-title">Mobile Phone</h3>
+                                    <h3 class="contact__card-title"> {{ __('home.mobile') }}</h3>
                                     <p class="contact__card-description">+1(514)651-6367</p>
                                 </div>
                             </div>
@@ -736,13 +737,13 @@
                             <div class="contact__card-info">
                                 <i class="bx bxs-envelope"></i>
                                 <div>
-                                    <h3 class="contact__card-title">Email</h3>
-                                    <p class="contact__card-description">Send Email </p>
+                                    <h3 class="contact__card-title">{{ __('home.eamil') }}</h3>
+                                    <p class="contact__card-description"> {{ __('home.send_email') }} </p>
                                 </div>
                             </div>
                             <a href="mailto:Osama@export4me.com">
                                 <button class="button contact__card-button">
-                                    Send Email
+                                    {{ __('home.send_email') }}
                                 </button>
                             </a>
                         </div>
@@ -751,12 +752,12 @@
                                 <i class="bx bxl-gmail"></i>
                                 <div>
                                     <h3 class="contact__card-title">Gmail</h3>
-                                    <p class="contact__card-description">Send Email </p>
+                                    <p class="contact__card-description"> {{ __('home.send_email') }}</p>
                                 </div>
                             </div>
                             <a href="mailto:Osama.g600@gmail.com">
                                 <button class="button contact__card-button">
-                                    Send Email
+                                    {{ __('home.send_email') }}
                                 </button>
                             </a>
                         </div>
@@ -764,13 +765,13 @@
                             <div class="contact__card-info">
                                 <i class="bx bxl-whatsapp"></i>
                                 <div>
-                                    <h3 class="contact__card-title">Whatsapp</h3>
-                                    <p class="contact__card-description">Send Message</p>
+                                    <h3 class="contact__card-title">{{ __('home.whatsapp') }} </h3>
+                                    <p class="contact__card-description"> {{ __('home.send_msg') }}  </p>
                                 </div>
                             </div>
                             <a href="https://wa.me/+201001003509">
                                 <button class="button contact__card-button">
-                                    Chat on Whatsapp
+                                    {{ __('home.chat_whatsapp') }}
                                 </button>
                             </a>
                         </div>
@@ -789,33 +790,33 @@
                 <form action="{{route('contact.us.store')}}" method="POST">
                     @csrf
 
-                    <h3>get in touch</h3>
-                    <label for="contact_name"><i class="bx bx-user"></i> Name</label>
-                    <input type="text" name="contact_name" placeholder="enter your name"
+                    <h3> {{ __('home.get_in_touch') }} </h3>
+                    <label for="contact_name"><i class="bx bx-user"></i>  {{ __('home.name') }} </label>
+                    <input type="text" name="contact_name" placeholder=" {{ __('home.contact_name') }}"
                            class="box form-control @error('contact_name') is-invalid @enderror"
                            id="contact_name"/>
                     @error('contact_name')
                     <span class="text-danger">{{$message}}</span>
                     @enderror
 
-                    <label for="contact_email"><i class="bx bx-envelope"></i> Email</label>
-                    <input type="email" name="contact_email" placeholder="enter your email address"
+                    <label for="contact_email"><i class="bx bx-envelope"></i> {{ __('home.email') }}</label>
+                    <input type="email" name="contact_email" placeholder="{{ __('home.contact_address') }}"
                            class="box form-control @error('contact_email') is-invalid @enderror"
                            id="contact_email"/>
                     @error('contact_email')
                     <span class="text-danger">{{$message}}</span>
                     @enderror
 
-                    <label for="contact_phone"><i class="bx bx-phone"></i> Phone</label>
-                    <input type="text" name="contact_phone" placeholder="phone" class="box form-control
+                    <label for="contact_phone"><i class="bx bx-phone"></i> {{ __('home.phone') }}</label>
+                    <input type="text" name="contact_phone" placeholder="{{ __('home.contact_phone') }}" class="box form-control
                     @error('contact_phone') is-invalid @enderror" id="contact_phone"/>
                     @error('contact_phone')
                     <span class="text-danger">{{$message}}</span>
                     @enderror
 
                     <label for="contact_message">
-                        <i class="bx bx-message-rounded-dots"></i> Message</label>
-                    <textarea name="contact_message" placeholder="message" id="contact_message"
+                        <i class="bx bx-message-rounded-dots"></i> {{ __('home.msg') }}</label>
+                    <textarea name="contact_message" placeholder=" {{ __('home.contact_message') }} " id="contact_message"
                               class="box form-control  @error('contact_message') is-invalid @enderror" cols="30"
                               rows="10">
                     </textarea>
@@ -825,7 +826,7 @@
 
 
                     <button class="button" type="submit">
-                        send message <i class="bx bx-send"></i>
+                        {{ __('home.contact_form') }} <i class="bx bx-send"></i>
                     </button>
                 </form>
             </div>

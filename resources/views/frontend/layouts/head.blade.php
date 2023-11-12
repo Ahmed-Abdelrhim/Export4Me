@@ -10,35 +10,35 @@
                 <li class="nav__item">
                     <a href="#home" class="nav__link active-link">
                         <i class="bx bx-home-alt-2"></i>
-                        <span>Home</span>
+                        <span> {{ __('home.nav_home') }} </span>
                     </a>
                 </li>
 
                 <li class="nav__item">
                     <a href="#popular" class="nav__link">
                         <i class="bx bx-building-house"></i>
-                        <span>services</span>
+                        <span> {{ __('home.serv') }} </span>
                     </a>
                 </li>
 
                 <li class="nav__item">
                     <a href="#value" class="nav__link">
                         <i class="bx bx-award"></i>
-                        <span>About</span>
+                        <span>{{ __('home.about') }}</span>
                     </a>
                 </li>
 
                 <li class="nav__item">
                     <a href="#contact" class="nav__link">
                         <i class="bx bx-phone"></i>
-                        <span>Contact</span>
+                        <span> {{ __('home.nav_contact') }} </span>
                     </a>
                 </li>
 
                 <li class="nav__item">
                     <a href="https://wa.me/+201001003509 " class="nav__link">
                         <i class="bx bxl-whatsapp"></i>
-                        <span></span>
+                        <span> {{ __('home.nav_contact') }} </span>
                     </a>
                 </li>
             </ul>
@@ -49,7 +49,7 @@
 
         <a href="https://wa.me/+201001003509 " class="button nav__button">
             <i class="bx bxl-whatsapp"></i>
-            WhatsApp
+            {{ __('home.whatsapp') }}
         </a>
     </nav>
 </header>

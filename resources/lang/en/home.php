@@ -31,7 +31,7 @@ return [
     'extract' => 'Extractor',
 
     'why' => 'WHY CHOOSE US',
-    'why_desc' => 'Since 2008, we have been a driving force, and we are proud to be a sister company of  Emirates Group Real Estate Developments & Investments, 
+    'why_desc' => 'Since 2008, we have been a driving force, and we are proud to be a sister company of  Emirates Group Real Estate Developments & Investments,
     founded by our esteemed CEO & Accountant, Osama Al-Metwally.',
 
     'trusted' => 'WE ARE TRUSTED',
@@ -126,11 +126,83 @@ return [
 
 
 
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
+    'contact_us' => 'Contact Us',
+    'easy_contact' => 'Easy to Contact Us',
+    'address' => 'Addres',
+
+    'chief' => 'Chief Executive Officer & Founder',
+    'mobile' => 'Mobile Phone',
+
+
+    'send_email' => 'Send Email',
+    'send_msg' => 'Send Message',
+    'chat_whatsapp' => 'Chat on Whatsapp',
+    'get_in_touch' => 'get in touch',
+    'email' => 'Email',
+    'phone' => 'Phone',
+    'msg' => 'Message',
+    'eamil' => 'Email',
+
+
+    'whatsapp' => 'Whatsapp',
+    'address_first' => 'H.office: 56 abbas akkad nasr city - cairo egypt',
+    'address_second' => 'B. office: 1 Palestine & Al-Jabarti st Dream Tower - Port said',
+
+    'name' => 'Name',
+
+    'contact_form' => 'Contact Us',
+    'contact_name' => 'enter your name',
+    'contact_address' => 'enter your email address',
+    'contact_message' => 'message',
+    'contact_phone' => 'enter your phone',
+
+    'our_team' => 'OUR TEAM ',
+    'team' => 'TEAM',
+
+    'mar' => 'Marketing and Financial Analyst',
+    'bus' => 'Business Development Manager',
+    'ch' => 'Chief Executive Officer & Founder',
+    'tech' => 'Technology and Software Director',
+    'human' => 'Human Resources Manager',
+    'mar' => 'Market Research Analyst',
+
+
+
+
+    'nav_home' => 'Home',
+    'serv' => 'services',
+    'about' => 'About',
+    'nav_contact' => 'Contact',
+
+
+
+    'about_footer' => 'About',
+    'fea' => 'Features',
+    'new_and_blog' => 'New & Blog',
+    'company' => 'Company',
+    'how_we_work' => 'How we Work',
+
+    'cap' => 'Capital',
+    'sec' => 'Security',
+    'support' => 'Support',
+    'support_center' => 'Support Center',
+    'follow' => 'Follow Us',
+
+    'terms' => 'Terms & conditions',
+
+    'privacy_and_policy' => 'Privacy Policy',
+
+    'rights_res' => 'Export 4 Me. All rights reserved',
+
+
+
+
+
+
+
+
+
+
     '' => '',
     '' => '',
     '' => '',

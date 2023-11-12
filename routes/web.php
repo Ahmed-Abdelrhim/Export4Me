@@ -49,6 +49,9 @@ All Users Routes List
 
 Route::group(['middleware' => 'prevent-back-history'], function () {
 
+    Route::get('setlocale/{locale}', [LocalizationController::class,'setLocale'])->name('setLocale');
+
+
 
     Route::get('hash', function () {
         return bcrypt('12345678');
